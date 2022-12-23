@@ -1,0 +1,78 @@
+/* * Header Background Style */
+.Header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.Header .Container , .Header .Container .Overlay{
+    width: 100%;
+    height: 100%;
+}
+.Header .Container .Overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.Header .Container .Header-Background{
+    background-image: url("../Images/Header/HeaderBackground.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* * Header Details Style */
+.Header .Header-Content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+    height: 100%;
+    color: white;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+.Header .Header-Content h1{
+    color: var(--Chocolate);
+}
+
+.Header .Header-Content p{
+    line-height: 30px;
+    
+}
+
+.Header .btn-view-more{
+    border: 0;
+    padding: 8px 20px;
+    background-color: var(--Chocolate);
+    color: white;
+    box-shadow: 4px 5px 10px var(--CadetBlue);
+    border-radius: 5px;
+}
+
+
+.Header .Right-Side-Header{
+    height: 100%;
+    width: 150px;
+    border-left: 1px solid var(--border-color);
+    position: absolute;
+    right: 0
+
+}
+.Header .Right-Side-Header-Container{
+    height: 70%;
+    padding-top: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header .Right-Side-Header-Container img{
+    width: 100%;
+    height: 120px;
+    border-bottom: 1px solid var(--border-color);
+    /* padding: 10px; */
+}

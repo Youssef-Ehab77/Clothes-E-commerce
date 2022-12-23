@@ -1,0 +1,21 @@
+/* * In This File will put all shared styles in it */
+
+body{
+    padding: 0;
+    margin: 0;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+/* * Color Palette  */
+:root{
+    --dark-Gray : #303142;
+    --CadetBlue : #4D5E77;
+    --light : #BEC1BE;
+    --Chocolate : #FF823D;
+    --border-color:#556b7c;
+
+}
