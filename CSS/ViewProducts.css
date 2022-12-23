@@ -1,0 +1,81 @@
+
+/* * start styling of view products */
+.view-products{
+    width: 95%;
+   margin: auto;
+   padding-bottom: 25px;
+}
+.view-products h1{
+    color: var(--dark-Gray );
+}
+.view-products .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.view-products .carousel{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+.products-header-wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+.products-header-wrapper .categories-of-products button{
+    background: none;
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--light);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.products-header-wrapper .categories-of-products button:hover,
+.products-header-wrapper .categories-of-products button.active
+{
+    background-color: var(--dark-Gray);
+    color: var(--light);
+}
+
+
+.carousel-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel-inner-item{position: relative;}
+
+.product_details img{
+    width: 240px;
+    border-radius: 10px;    
+    cursor: pointer;
+}
+.product_details .Overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;    
+    display: none;
+}
+
+.carousel .carousel-control-prev,
+.carousel-control-next
+{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+
+.carousel .carousel-control-prev{left: -40px;}
+.carousel-control-next{right: -40px;}
+
