@@ -14,11 +14,6 @@
     flex-direction: column;
 }
 
-.view-products .carousel{
-    width: 95%;
-    margin: auto;
-    position: relative;
-}
 
 .products-header-wrapper{
     display: flex;
@@ -26,6 +21,8 @@
     width: 25%;
     margin-bottom: 15px;
 }
+
+/* * start styling of Filteration Buttons */
 
 .products-header-wrapper .categories-of-products button{
     background: none;
@@ -41,16 +38,17 @@
 .products-header-wrapper .categories-of-products button.active
 {
     background-color: var(--dark-Gray);
-    color: var(--light);
+    color: white;
 }
 
+/* * end styling of Filteration Buttons */
 
-.carousel-inner{
-    display: flex;
-    justify-content: space-between;
+
+
+/* * start styling of Product details */
+.product_details{
+    position: relative;
 }
-
-.carousel-inner-item{position: relative;}
 
 .product_details img{
     width: 240px;
@@ -64,18 +62,55 @@
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;    
+    border-radius: 10px;   
+    cursor: pointer; 
     display: none;
 }
 
-.carousel .carousel-control-prev,
-.carousel-control-next
+.btn-carousel-view-details{
+    position: relative;
+    margin: auto;
+    top: -20px;
+    background-color: var(--dark-Gray);
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    margin-left: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+.btn-carousel-view-details:hover{
+    background-color: var(--Chocolate);
+}
+/* * end styling of Product details */
+
+
+/* * start styling of  carousel */
+
+.view-products .carousel{
+    width: 95%;
+    margin: auto;
+    position: relative;
+}
+
+.view-products .carousel-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.view-products .carousel-inner-item{position: relative;}
+
+
+.view-products .carousel .carousel-control-prev,
+.view-products .carousel-control-next
 {
     position: absolute;
     top: 45%;
     cursor: pointer;
 }
 
-.carousel .carousel-control-prev{left: -40px;}
-.carousel-control-next{right: -40px;}
+.view-products .carousel .carousel-control-prev{left: -30px;}
+.view-products .carousel-control-next{right: -30px;}
 
+/* * end styling of  carousel */
