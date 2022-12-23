@@ -3,6 +3,7 @@
 body{
     padding: 0;
     margin: 0;
+    height: 200vh;
 }
 *{
     font-family: 'Open Sans', sans-serif;
