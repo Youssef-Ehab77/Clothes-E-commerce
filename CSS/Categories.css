@@ -1,8 +1,8 @@
 body {
     font-family: Roboto, sans-serif;
     margin: 10px;
+    /*background-color: #efeeee;*/
 }
-
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -39,7 +39,6 @@ body {
 
 .card-img {
     margin: 5px;
-    flex: 3;
     display: flex;
     justify-content: center;
 }
@@ -49,13 +48,12 @@ body {
     height: 300px;
     object-fit: cover;
     border-radius: 10%;
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .card-info {
     margin: 5px 30px;
     padding: 5px;
-    flex: 1;
 }
 
 .card-name {
@@ -80,7 +78,12 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    box-shadow: 0 0 20px #4F5D75;
-    border-radius: 5px;
+    box-shadow: 0 0 10px #4F5D75;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
 }
 

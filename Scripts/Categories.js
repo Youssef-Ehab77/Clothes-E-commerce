@@ -1,5 +1,5 @@
 let products = [];
-
+//console.log(window.location);
 $.ajax("../JSON/Products.json", {
     type: "GET",
     dataType: "json",
@@ -11,18 +11,18 @@ $.ajax("../JSON/Products.json", {
     },
 });
 
-setTimeout(function (){
+setTimeout(function () {
     for (let i in products) {
-        console.log(products[i].name);
+        $('.main').append(
+            "<div class=\"card\">\n" +
+            "    <div class=\"card-img\">\n" +
+            "        <img src=\"" + products[i].src + "\" alt=\"loading\">\n" +
+            "    </div>\n" +
+            "    <div class=\"card-info\">\n" +
+            "        <div class=\"card-name\">" + products[i].name + "</div>\n" +
+            "        <div class=\"card-price\">" + products[i].price + "</div>\n" +
+            "    </div>\n" +
+            "</div>"
+        )
     }
-},500);
-
-//<div class="card">
-//             <div class="card-img">
-//                 <img src="../Images/3.jpg" alt="loading">
-//             </div>
-//             <div class="card-info">
-//                 <div class="card-name">Black Horse</div>
-//                 <div class="card-price">1300.50</div>
-//             </div>
-//         </div>
+}, 300);
