@@ -55,6 +55,7 @@
     border-radius: 10px;    
     cursor: pointer;
 }
+
 .product_details .Overlay{
     width: 100%;
     height: 100%;
@@ -66,7 +67,10 @@
     cursor: pointer; 
     display: none;
 }
-
+.product_details .Overlay.active{
+    /* position: static; */
+    display: block;
+}
 .btn-carousel-view-details{
     position: relative;
     margin: auto;
@@ -75,13 +79,18 @@
     color: white;
     padding: 10px 15px;
     border: 0;
-    margin-left: 50px;
+    margin-left: 60px;
     cursor: pointer;
     border-radius: 5px;
-    display: none;
+    visibility: hidden;
+}
+.hover,
+.btn-carousel-view-details.hover{
+    visibility: visible;
 }
 .btn-carousel-view-details:hover{
     background-color: var(--Chocolate);
+    visibility: visible;
 }
 /* * end styling of Product details */
 
