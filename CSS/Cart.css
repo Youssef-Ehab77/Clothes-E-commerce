@@ -16,7 +16,7 @@ body {
 .main {
     padding: 30px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 30fr 1fr 20fr;
     row-gap: 50px;
     margin: 100px;
     border: 1px solid;
@@ -51,13 +51,9 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.product-detail .list-details{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.incdec {
+
+.increment, .decrement {
     display: flex;
     height: 15px;
     width: 10px;
@@ -67,8 +63,26 @@ body {
 
 .vl {
     border-left: 0.5px solid  rgb(162, 159, 159);
-    height: 500px;
+    height: 100%;
   }
+
+  .shipping-details {
+    display: inline-block;
+  }
+
+  .inputs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+
+  }
+
+  .single-input-label {
+    font-weight: bolder;
+  }
+  .
+
+
 
 @media (max-width: 950px){
     .main {
