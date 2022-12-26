@@ -57,9 +57,16 @@ body {
     justify-content: center;
 }
 
+.vl {
+    border-left: 0.5px solid  rgb(162, 159, 159);
+    height: 500px;
+  }
 
 @media (max-width: 950px){
     .main {
         grid-template-columns: 1fr;
+    }
+    .vl {
+        display: none;
     }
 }
