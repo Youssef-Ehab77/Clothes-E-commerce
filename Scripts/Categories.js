@@ -1,5 +1,7 @@
 let products = [];
 //console.log(window.location);
+//https://api.escuelajs.co/api/v1/products
+
 $.ajax("../JSON/Products.json", {
     type: "GET",
     dataType: "json",
@@ -10,7 +12,6 @@ $.ajax("../JSON/Products.json", {
         console.log("Error");
     },
 });
-
 setTimeout(function () {
     for (let i in products) {
         $('.main').append(
@@ -26,3 +27,12 @@ setTimeout(function () {
         )
     }
 }, 300);
+
+
+$(function () {
+    setTimeout(function (){
+        $("#header").load('../HTML/Header.html');
+        $('#footer').load('../HTML/Footer.html');
+    },250)
+
+});
