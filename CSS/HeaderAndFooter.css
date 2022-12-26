@@ -1,0 +1,233 @@
+/* start global */
+* {
+    /* we give brand 30% and links 70%
+    theoretically is fit but because of padding in elements
+    the were above each other so to solve this
+    we used this
+    it remove padding from element width*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*body {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    background-color: #FFFFFF;*/
+/*    min-height: 100vh;*/
+/*    position: relative;*/
+/*}*/
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    /* I made the content in the middle
+    while the back ground on whole screen */
+    width: 85%;
+    margin: auto; /* to make content in middle*/
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* end global */
+
+/* start nav bar */
+.nav-bar {
+    background-color: #2D3142;
+    color: #BFC0C0;
+    overflow: hidden;
+}
+
+.nav-bar .brand-name {
+    color: #EF8354;
+    float: left;
+    width: 55%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.nav-bar .links {
+    float: left;
+    width: 45%;
+
+}
+
+.nav-bar .links li {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-bar .links li.active, .nav-bar .links li:hover {
+    color: #EF8354;
+    border-bottom: 2px solid #EF8354;
+}
+
+/* end nav bar */
+
+/* start carousel */
+
+.box {
+    width: 20%;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    /* transform: translate(-50%,-50%) ; */
+}
+
+.slide-img {
+    height: 30%;
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    font-family: calibri, serif;
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    color: #EF8354;
+    margin: 5px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-right: 8px;
+}
+
+.type span {
+    color: #2D3142;
+    letter-spacing: 1px;
+}
+
+.price {
+    color: #EF8354;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: calibri, serif;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+/* end of carousel */
+
+/* start footer */
+
+footer{
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    /*right: 0;*/
+    /*left: 0;*/
+}
+
+.footer {
+    background-color: #2D3142;
+    color: #BFC0C0;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    /*bottom: 0;*/
+}
+
+.footer .footer-content {
+    color: #EF8354;
+    float: left;
+    width: 85%;
+    text-transform: uppercase;
+
+}
+
+.footer .footer-content .shop {
+    color: #EF8354;
+    float: left;
+
+}
+
+.footer .footer-content .shop li {
+    color: #BFC0C0;
+    margin-top: 15px;
+
+}
+
+.footer .footer-content li {
+    color: #BFC0C0;
+    margin-top: 15px;
+
+}
+
+.footer .footer-column {
+    display: inline-block;
+    width: 30%;
+    margin-right: 22px;
+}
+
+.footer .footer-column h4 {
+    color: #EF8354;
+    font-size: 20px;
+    border-bottom: 2px solid #EF8354;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.footer .social-content {
+    color: #EF8354;
+    float: left;
+    width: 15%;
+    text-transform: uppercase;
+}
+
+.footer .social-content a {
+    color: #BFC0C0;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.footer .social-content a:hover {
+    color: #EF8354;
+    font-size: 25px;
+}
+
+.footer .social-content h4 {
+    color: #EF8354;
+    border-bottom: 2px solid #EF8354;
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+/* end of footer */
+
+
+/* start carousel */
+/*.carousel img {*/
+/*    width: 600px;*/
+/*}*/
+
+/* end carousel */
