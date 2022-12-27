@@ -4,10 +4,10 @@
 
 
 $(function() {
-    $("#header-component").load("../HTML/Header.html");
+    $("#header-component").load("../HTML/Components/Header.html");
 });
 
 //* Load Product Component
 $(function() {
-    $("#product-component").load("../HTML/ViewProducts.html");
+    $("#product-component").load("../HTML/Components/ViewProducts.html");
 });
