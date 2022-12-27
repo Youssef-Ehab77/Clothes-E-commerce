@@ -1,6 +1,9 @@
 
-body {
+* {
     font-family: Roboto, sans-serif;
+}
+
+body{
     margin: 0;
 }
 .main {
@@ -88,5 +91,7 @@ body {
 
 .card:hover{
     transform: scale(1.05);
+    /*text-decoration: underline;*/
+    opacity: 0.8;
 }
 
