@@ -1,0 +1,84 @@
+/* * header Background Style */
+.header{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.header .container , .header .container .overlay{
+    width: 100%;
+    height: 100%;
+}
+.header .container .overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.header .container .header-background{
+    background-image: url("../Images/header/HeaderBackground.jpg");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/* * header Details Style */
+.header .header-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    color: white;
+    padding-left: 15px;
+    padding-right: 25px;
+    text-align: center;
+}
+.header .header-content h1{
+    /* color: var(--Chocolate); */
+    color: var(--dark-Gray);
+}
+
+.header .header-content p{
+    line-height: 30px
+}
+
+.header .view-more-items .btn-view-more{
+    border: 0;
+    padding: 8px 20px;
+    background-color: var(--dark-Gray);
+    color: white;
+    box-shadow: 4px 5px 10px var(--CadetBlue);
+    border-radius: 5px;
+    cursor: pointer!important;
+    z-index: 1000;
+}
+
+.header .view-more-items .btn-view-more:hover{
+    background-color: brown;
+}
+
+
+.header .right-side-header{
+    height: 100%;
+    width: 80px;
+    position: absolute;
+    right: 0;
+    box-shadow: 2px 0px 10px #131212;
+    padding-left: 10px;
+
+}
+.header .right-side-header-container{
+    height: 70%;
+    padding-top: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .right-side-header-container img{
+    width: 100%;
+    height: 80px;
+}
