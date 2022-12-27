@@ -3,9 +3,11 @@
 //* 
 $(function(){
     var products = $('.view-products .carousel-inner-item ');
+    console.log(products )
     for (var i = 0; i < products.length; i++) {
         if(products.eq(i).hover)
         products.eq(i).hover(function(){
+
             //* Display Overlay 
             $(this).children(0).children(0).eq(0).addClass('active',1000) 
 
