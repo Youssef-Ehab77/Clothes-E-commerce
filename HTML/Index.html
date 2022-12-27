@@ -1,155 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--* Add Icon in Title -->
-    <link rel="shortcut icon" href="../Images/Header/icon.png" />
-    <title>BOHO.. </title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--* Add Icon in Title -->
+        <link rel="shortcut icon" href="../Images/Header/icon.png" />
+        <title>BOHO.. </title>
 
-    <!-- * Start Adding External Css Files -->
-    <link rel="stylesheet" href="../CSS/Style.css"/>
-    
-    <link rel="stylesheet" href="../CSS/Header.css"/>
-
-    <link rel="stylesheet" href="../CSS/Scrollbar.css"/>
-
-    <link rel="stylesheet" href="../CSS/ViewProducts.css"/>
-
-    
-    <!-- * End Adding External Css Files -->
-
-
-    <!--* start Add FontFamily link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
-    <!--* Start Header -->
-    <div class="header">
-        <div class="container">
-            <div class="overlay"></div>
-            <div class="header-background">
-                <div class="header-content">
+        <!-- * Start Adding External Css Files -->
+        <link rel="stylesheet" href="../CSS/Style.css"/>
         
-                    <!-- * Header Details  -->
-                    <div class="header-details">
-                        <h1>Shop Together</h1>
-                        <p>We want your child to feel comfortable, loved and free. Our organic and fairtrade clothing ensures quality of our Clothes</p>
-                    </div>
+        <link rel="stylesheet" href="../CSS/Header.css"/>
 
-                    <!-- * View More Items Button  -->
-                    <div class="view-more-items">
-                        <button class="btn-view-more">View More</button>
-                    </div>
-                
-                    <!-- * Right Side -->
-                    <div class="right-side-header">
-                        <div class="right-side-header-container">
-                            <img src="../Images/Header/Wool1.png">
-                            <img src="../Images/Header/Wool2.png">
-                            <img src="../Images/Header/Wool3.png">
-                        
-                        </div>
-                    </div>
- 
-                </div>
-               
-            </div>
-            
-        </div>
-    </div>
-    <!--* End Header -->
+        <link rel="stylesheet" href="../CSS/Scrollbar.css"/>
+
+        <link rel="stylesheet" href="../CSS/ViewProducts.css"/>
+
+        
+        <!-- * End Adding External Css Files -->
 
 
-    <!-- * Start View Trending -->
-    <div class="view-products">
-        <h1> Trending Now </h1>
-        <div class="container">
-
-            <!-- * start Filteration Of products -->
-            <div class="products-header-wrapper">
-                <div class="categories-of-products">
-                    <button class="active">Women</button>
-                </div>
-                <div class="categories-of-products">
-                    <button>Men</button>
-                </div>
-                <div class="categories-of-products">
-                    <button>Sale</button>
-                </div>
-            </div>
-            <!-- * end Filteration Of products -->
-
-            <!-- * start carousel -->
-            <div class="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-inner-item">
-                        <div class="product_details">
-                            <div class="Overlay"></div>
-                            <img src="../Images/Products/Women/2.jpg"/>            
-                        </div>
-                        <button class="btn-carousel-view-details"> View Details</button>
-                    </div>
-
-                    <div class="carousel-inner-item">
-                        <div class="product_details">
-                            <div class="Overlay"></div>
-                            <img src="../Images/Products/Women/3.jpg"/>
-                        </div>
-                        <button class="btn-carousel-view-details"> View Details</button>
-                        
-                    </div>
+        <!--* start Add FontFamily link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <!--* Start Header Component -->
+        <div id="header-component"></div>
+        <!--* End Header -->
 
 
-                    <div class="carousel-inner-item">
-                        <div class="product_details">
-                            <div class="Overlay"></div>
-                            <img src="../Images/Products/Women/4.jpg"/>
-                        </div>
-                        <button class="btn-carousel-view-details"> View Details</button>
-                        
-                    </div>
+        <!-- * Start View product Component -->
+        <div id="product-component"></div>
+        <!-- * End View product Component -->
 
 
-                    <div class="carousel-inner-item">
-                        <div class="product_details">
-                            <div class="Overlay"></div>
-                            <img src="../Images/Products/Women/5.jpg"/>
-                        </div>
-                        <button class="btn-carousel-view-details"> View Details</button>
-                        
-                    </div>
-                </div>
-
-                <!-- * start Arrows of carousel -->
-                <div class="carousel-control-prev">
-                    <img src="../Images/Products/left-arrow.png"/>
-                </div>
-                <div class="carousel-control-next">
-                    <img src="../Images/Products/right-arrow.png"/>
-                </div>
-
-                <!-- * end Arrows of carousel -->
-
-            </div>
-            <!-- * end carousel -->
-
-            
-
-        </div>
-
-    </div>
-
-    <!-- * End View Trending -->
-
-
-    <!-- *  Start Script -->
-    <script src="../Scripts/jquery.js"></script>
-    <script src="../Libaray/FadeInProductDetails.js"></script>
-    <!-- *  End Script -->
+        <!-- *  Start Script -->
+        <script src="../Scripts/jquery.js"></script>
+        <script src="../Scripts/LoadComponents.js"></script>
+        
+        <script src="../Libaray/FadeInProductDetails.js"></script>
+        <!-- *  End Script -->
 
 
 
-</body>
+    </body>
 </html>
