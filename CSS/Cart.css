@@ -1,10 +1,9 @@
-* {
-    color: #2D3142;
-}
 
 
 body {
     font-family: Roboto, sans-serif;
+    color: #2D3142;
+    background-color: white;
 }
 
 .cart-header {
@@ -14,19 +13,16 @@ body {
     height: 50px;
 }
 
-body {
-    background-color: rgb(45, 49, 66);
-}
-
 .main {
     padding: 30px;
     display: grid;
     grid-template-columns: 30fr 1fr 20fr;
     row-gap: 50px;
     margin: 100px;
-    border: 1px solid;
-    border-color: black;
-    background-color: silver;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(186, 186, 186);
 }
 
 .list-details {
@@ -70,9 +66,9 @@ body {
   .shipping-details {
     display: inline-block;
     position: relative;
-
   }
 
+  
   .inputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -143,6 +139,18 @@ body {
     margin-top: 25px;
     font-weight: bolder;
     font-size: large;
+  }
+
+  .horline {
+    width: 209%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .empty-cart {
+    color:#2D3142;
+    font-weight: bolder;
+    font-size: larger;
   }
 
 @media (max-width: 950px){

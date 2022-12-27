@@ -32,16 +32,17 @@ $(function() {
 
             "<div class='item-price' class='product-detail'>" +item.price + "</div>" +
             "<div class='item-total' class='product-detail'>" + item.price + "</div>" +
-        "</div>" +
-        "<hr>")
+            "<hr class='horline'>" +
+            "</div>" 
+        )
             }
 
-        }
-    })
+
     
 
     setTimeout(function (){
         $("#footer").load('../HTML/Footer.html');
+        $('#header').load('../HTML/Header.html');
         $('.total-price').text('Total Price: $' + check_price);
         $('.number-items').text(number_of_items + ' items');
 
@@ -92,8 +93,10 @@ $(function() {
                 if (count != 0)
                     var tmpTotal = count * parseInt(price);
                 else
-                    var tmpTotal = 0
-
+                {
+                    $(this).closest('.product').remove();
+                    $(this).closest('.horline').remove();
+                }
 
                 //update check price
 
@@ -106,6 +109,23 @@ $(function() {
             }
             
             countElement.text(count);
+
+
+            if ($(".main").find('.product').length === 0)
+            {
+                $(".main").empty();
+                $(".main").append('<section class="empty-cart">' +
+                '<div class="empty-text">"Your Cart is Empty!"</div>' +
+                '<button type="button" class="continue-shopping">← Continue Shopping</button>' +
+            '</section>')
+
+            $(".main").width('250px');
+            $(".main").css('margin', 'auto');
+            $(".main").css('margin-top', '200px');
+            $(".main").css('margin-bottom', '200px');
+            $(".empty-text").css('white-space', 'nowrap');
+            }
+
         });
 }, 100)
 
@@ -116,11 +136,7 @@ $('.proceed-btn').click(function(){
 )
 
 
-
-$(function () {
-    setTimeout(function (){
-        $('#footer').load('../HTML/Footer.html');
-    },250)
+}
 })
 
 })
