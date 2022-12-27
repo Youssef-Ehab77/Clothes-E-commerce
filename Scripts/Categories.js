@@ -25,14 +25,21 @@ setTimeout(function () {
             "    </div>\n" +
             "</div>"
         )
+
     }
+    $('.card').click(function () {
+        let data = this.innerText.split('\n');
+        window.location = '../HTML/Cart.html?product=' + data[0];
+    });
+
+
 }, 300);
 
 
 $(function () {
-    setTimeout(function (){
+    setTimeout(function () {
         $("#header").load('../HTML/Header.html');
         $('#footer').load('../HTML/Footer.html');
-    },250)
+    }, 250)
 
 });
