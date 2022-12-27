@@ -1,3 +1,8 @@
+* {
+    color: #2D3142;
+}
+
+
 body {
     font-family: Roboto, sans-serif;
 }
@@ -27,12 +32,8 @@ body {
 .list-details {
     display: grid;
     grid-template-columns: 3fr 1fr 1fr 1fr;
-<<<<<<< Updated upstream
     margin: 20px 0px;
     column-gap: 10px;
-=======
-    margin: 20px 0;
->>>>>>> Stashed changes
 }
 
 .product {
@@ -68,21 +69,81 @@ body {
 
   .shipping-details {
     display: inline-block;
+    position: relative;
+
   }
 
   .inputs {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
+    position: relative;
 
   }
 
   .single-input-label {
     font-weight: bolder;
   }
-  .
+
+  .proceed-btn {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    color: white;
+    background-color: #4F5D75;
+    box-shadow: 0 5px #999;
+    cursor: pointer;
+    border-radius: 20%;
+  }
+
+  .proceed-btn:hover {
+    background-color: #BFC0C0;
+    box-shadow: 0 7px #666;
+    top: 2px;
+  }
+  
+  .proceed-btn:active {
+    background-color: #EF8354;
+    box-shadow: 0 2px #666;
+    top: 5px;
+  }
 
 
+  .cart-title{
+    font-weight: bolder;
+    font-size: larger;
+
+  }
+
+  .shipping-details-title {
+    font-weight: bolder;
+    font-size: larger;
+  }
+
+  .continue-shopping {
+    display: block;
+    font-weight: bolder;
+    color: #EF8354;
+    -webkit-text-stroke: 0.3px #2D3142;
+    background-color: transparent;
+    border: 0cm;
+    cursor: pointer;
+  }
+
+  .continue-shopping:hover {
+    font-weight: bolder;
+    font-size: 14px
+  }
+
+  .continue-shopping:active {
+    color: #999;
+  }
+
+  .total-price {
+    margin-top: 25px;
+    font-weight: bolder;
+    font-size: large;
+  }
 
 @media (max-width: 950px){
     .main {
