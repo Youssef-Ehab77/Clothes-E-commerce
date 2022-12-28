@@ -1,16 +1,13 @@
-function getCookie(cookieName)
-{
-    var name = cookieName+"=";
+function getCookie(cookieName) {
+    var name = cookieName + "=";
 
-    var Arrofcookie = document.cookie.split(';');  
+    var Arrofcookie = document.cookie.split(';');
 
-    for(var i=0 ; i<Arrofcookie.length; i++)
-    {
-        var v = Arrofcookie[i].trim() ;
+    for (var i = 0; i < Arrofcookie.length; i++) {
+        var v = Arrofcookie[i].trim();
 
-        if(v.indexOf(name) == 0)
-        {
-            return v.substring(name.length , v.length);
+        if (v.indexOf(name) === 0) {
+            return v.substring(name.length, v.length);
         }
     }
     return "";

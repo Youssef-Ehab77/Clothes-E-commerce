@@ -35,6 +35,7 @@
     border-radius: 5px;
     background-color: #EF8354;
     color: #FFFFFF;
+    border: none;
 }
 
 .sign-up-btn:hover {
