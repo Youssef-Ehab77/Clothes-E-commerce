@@ -1,0 +1,139 @@
+
+/* * start styling of view products */
+.view-products{
+    width: 91%;
+   margin: auto;
+   padding-bottom: 25px;
+}
+.view-products h1{
+    color: var(--dark-Gray );
+}
+.view-products .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.products-header-wrapper{
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    margin-bottom: 15px;
+}
+
+/* * start styling of Filteration Buttons */
+
+.products-header-wrapper .categories-of-products button{
+    background: none;
+    padding: 5px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    border-color: var(--light);
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.products-header-wrapper .categories-of-products button:hover,
+.products-header-wrapper .categories-of-products button.active
+{
+    background-color: var(--dark-Gray);
+    color: white;
+}
+
+/* * end styling of Filteration Buttons */
+
+
+
+/* * start styling of Product details */
+.product_details{
+    position: relative;
+}
+
+
+.product_details img{
+    width: 240px;
+    border-radius: 10px;    
+    cursor: pointer;
+}
+
+.product_details .Overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;   
+    cursor: pointer; 
+    display: none;
+}
+.product_details .Overlay.active{
+    /* position: static; */
+    display: block;
+}
+.btn-carousel-view-details{
+    position: relative;
+    margin: auto;
+    top: -20px;
+    background-color: var(--dark-Gray);
+    color: white;
+    padding: 10px 15px;
+    border: 0;
+    margin-left: 60px;
+    cursor: pointer;
+    border-radius: 5px;
+    visibility: hidden;
+}
+.hover,
+.btn-carousel-view-details.hover{
+    visibility: visible;
+}
+.btn-carousel-view-details:hover{
+    background-color: var(--Chocolate);
+    visibility: visible;
+}
+/* * end styling of Product details */
+
+
+/* * start styling of  carousel */
+
+.view-products .carousel{
+    width: 100%;
+    position: relative;
+}
+
+.view-products .carousel-inner{
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.view-products .carousel-inner::-webkit-scrollbar {
+  display: none;
+}
+
+
+.view-products .carousel-inner-item{position: relative; margin-left: 10px;}
+
+
+.view-products .carousel .carousel-control-prev,
+.view-products .carousel-control-next
+{
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+}
+
+.view-products .carousel .carousel-control-prev{left: -30px;}
+.view-products .carousel-control-next{right: -30px;}
+
+/* * end styling of  carousel */
+
+
+
+
+@media screen and (min-width:1200px)   {
+    
+    .view-products .carousel{
+        width: 70%!important;
+    }
+}

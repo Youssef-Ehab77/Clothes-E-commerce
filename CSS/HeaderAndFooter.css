@@ -42,20 +42,22 @@ ul {
     background-color: #2D3142;
     color: #BFC0C0;
     overflow: hidden;
+
 }
 
 .nav-bar .brand-name {
     color: #EF8354;
     float: left;
-    width: 55%;
+    width: 50%;
     text-transform: uppercase;
-    margin-top: 10px;
+    margin-top: 10px;   
 }
 
 .nav-bar .links {
-    float: left;
-    width: 45%;
-
+    /* float: left; */
+    float: right;
+    width: 50%;
+    text-align: right;
 }
 
 .nav-bar .links li {
@@ -64,6 +66,7 @@ ul {
     padding: 10px 15px;
     text-transform: uppercase;
     border-bottom: 2px solid transparent;
+    cursor: pointer;
 }
 
 .nav-bar .links li.active, .nav-bar .links li:hover {
@@ -152,15 +155,22 @@ ul {
 .footer .footer-content {
     color: #EF8354;
     float: left;
-    width: 85%;
+    /* width: 65%; */
     text-transform: uppercase;
 
 }
+.footer .footer-content {
+    display: flex;
+    margin-bottom: 40px;
+    justify-content: center;
+    width: 100%;
+} 
+
 
 .footer .footer-content .shop {
     color: #EF8354;
     float: left;
-
+    width: 20%;
 }
 
 .footer .footer-content .shop li {
@@ -177,16 +187,18 @@ ul {
 
 .footer .footer-column {
     display: inline-block;
-    width: 30%;
+    width: 35%;
+    margin-left: 20px;
     margin-right: 22px;
 }
 
 .footer .footer-column h4 {
     color: #EF8354;
+    display: inline-block;
     font-size: 20px;
     border-bottom: 2px solid #EF8354;
     margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding: 10px 8px;
 }
 
 .footer .social-content {
@@ -199,12 +211,12 @@ ul {
 .footer .social-content a {
     color: #BFC0C0;
     margin-left: 15px;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 .footer .social-content a:hover {
     color: #EF8354;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .footer .social-content h4 {
@@ -224,3 +236,28 @@ ul {
 /*}*/
 
 /* end carousel */
+
+
+@media screen and (min-width:991px) and (max-width:1200px)  {
+    .nav-bar li{font-size: 12px;  padding: 5px 10px!important; margin-left: 15px;}
+    .nav-bar .brand-name {width: 40%!important; margin-top: 5px!important; }
+    .nav-bar .links {  width: 55%!important  }
+    .footer .footer-content { width: 85%!important }
+    .footer .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footer .footer-content li {font-size: 13px;}
+    .footer .footer-column h4 {font-size: 15px;}
+
+    .footer .footer-content {display: flex; margin-bottom: 40px;} 
+    .footer .footer-column {
+        margin-left: 10px;
+        margin-right: 10px;
+    } 
+    .footer .footer-content .shop {width: 20%;}
+    
+}
