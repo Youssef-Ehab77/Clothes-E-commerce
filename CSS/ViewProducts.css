@@ -71,7 +71,7 @@
     /* position: static; */
     display: block;
 }
-.btn-carousel-view-details{
+.btn-carousel-view-details {
     position: relative;
     margin: auto;
     top: -20px;
@@ -83,6 +83,9 @@
     cursor: pointer;
     border-radius: 5px;
     visibility: hidden;
+}
+.btn-carousel-view-details a{
+    color: white;
 }
 .hover,
 .btn-carousel-view-details.hover{

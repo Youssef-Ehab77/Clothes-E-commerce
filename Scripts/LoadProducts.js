@@ -33,9 +33,9 @@ function loadData(category){
                 var data = JSON.parse(xhr.response).sort((a, b) => 0.5 - Math.random());;
                 for(var i=0; i<8;i++){
                     //* append product items from json file into html file
-                    $('.carousel-inner').append(
+                    console.log($('.carousel-inner-item'))
+                    $('.carousel-inner-item').eq(i).append(
                         `
-                        <div class="carousel-inner-item">
                             <div class="product_details">
                                 <div class="Overlay"></div>
                                 <img src='${data[i].path}' />            
@@ -43,20 +43,27 @@ function loadData(category){
                             <button class="btn-carousel-view-details">
                                 <a href = './Product.html?id=${data[i].id}' > View Details </a>
                             </button>
-                        </div>  
                         `
                     )
+                    
                 }
             }
         }
     }
     //2-send
     xhr.send("")
+
+    
 }  
 
 
 $(function(){
     loadData('women')
+    
 })
+
+
+    
+    
 
 

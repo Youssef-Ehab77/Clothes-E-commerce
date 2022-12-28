@@ -4,7 +4,7 @@ var end = 7
     document.querySelectorAll('.view-products .carousel-inner-item ').forEach(function(item){
         var containerDimensions = item.getBoundingClientRect();
         var containerWidth = containerDimensions.width;
-        console.log(item , containerDimensions )
+        //console.log(item , containerDimensions )
         
         document.querySelector('.carousel-control-next').addEventListener('click', () => {
             console.log("ss")
