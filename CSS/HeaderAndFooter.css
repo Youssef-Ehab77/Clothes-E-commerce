@@ -240,7 +240,7 @@ ul {
 
 @media screen and (min-width:991px) and (max-width:1200px)  {
     .nav-bar li{font-size: 12px;  padding: 5px 10px!important; margin-left: 15px;}
-    .nav-bar .brand-name {width: 40%!important }
+    .nav-bar .brand-name {width: 40%!important; margin-top: 5px!important; }
     .nav-bar .links {  width: 55%!important  }
     .footer .footer-content { width: 85%!important }
     .footer .container {
