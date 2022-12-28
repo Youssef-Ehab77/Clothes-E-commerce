@@ -33,7 +33,6 @@ function loadData(category){
                 var data = JSON.parse(xhr.response).sort((a, b) => 0.5 - Math.random());;
                 for(var i=0; i<8;i++){
                     //* append product items from json file into html file
-                    console.log($('.carousel-inner-item'))
                     $('.carousel-inner-item').eq(i).append(
                         `
                             <div class="product_details">
@@ -63,6 +62,18 @@ $(function(){
 })
 
 
+//* Toggle Taps
+$(function(){
+    for(var i=0 ; i<3 ; i++){
+        $('.products-header-wrapper').children(i).click(function(){
+            $(this).addClass('active')
+            if(j!==i){
+                $(this).siblings.removeClass('active')
+            }
+        })
+    }
+
+})
     
     
 
