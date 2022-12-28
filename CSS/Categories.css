@@ -95,3 +95,26 @@ body{
     opacity: 0.8;
 }
 
+.model-img{
+    object-fit: contain;
+    width: 100%;
+    height: 30%;
+}
+.model-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /*width: 100%;*/
+    /*height: 50%;*/
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.word{
+    position: absolute;
+    color: #FFFFFF;
+    top: 10%;
+    left: 1%;
+    font-size: 50px;
+}

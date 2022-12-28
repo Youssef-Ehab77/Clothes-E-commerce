@@ -4,19 +4,16 @@
 }
 
 body {
-    margin: 70px 0 0 0;
+    margin: 0;
 
 }
 
-.container {
-    height: 100vh;
-}
-
-.welcome {
+.login-container {
     display: grid;
     justify-content: center;
     align-items: center;
     text-align: center;
+    height: 100vh;
 }
 
 .login-form-container {
@@ -53,7 +50,7 @@ body {
     text-decoration: none;
     font-size: 24px;
     padding: 10px 35px;
-    margin: 20px;
+    margin: 30px;
     border-radius: 5px;
     background-color: #EF8354;
     color: #FFFFFF;
@@ -67,7 +64,7 @@ body {
     opacity: 0.9;
 }
 
-.input-text {
+.login-input-text {
     font-size: 20px;
     padding: 10px;
     margin: 10px;

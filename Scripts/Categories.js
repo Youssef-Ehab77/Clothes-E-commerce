@@ -1,7 +1,7 @@
 let products = [];
 //console.log(window.location);
 //https://api.escuelajs.co/api/v1/products
-
+//../JSON/Products.json
 $.ajax("../JSON/Products.json", {
     type: "GET",
     dataType: "json",
