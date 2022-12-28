@@ -132,6 +132,7 @@ $(function() {
 
 $('.proceeder').on('click', (function(){
     $('.checkout').show();
+    $(".pay").text('Pay ' + check_price + '$');
 }
 ))
 
@@ -145,7 +146,7 @@ $(document).mouseup(function(p)
   });
 
 
-$(".pay").text('Pay ' + check_price + '$')
+
 
 $(".pay").click(function(){
     $(".checkout").empty();
@@ -170,7 +171,8 @@ $(".pay").click(function(){
     }
 
     $(".pay-shopping-btn").click(function () {
-        window.open('../HTML/Categories.html'); //home page
+        event.preventDefault();
+        window.location = '../HTML/Categories.html'; //home page
     })
     
 
