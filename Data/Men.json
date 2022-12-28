@@ -1,0 +1,124 @@
+[
+  {
+    "id": "m-item1",
+    "name": "Menswear | Oversized Boxy Tee, Black",
+    "price": "£42.00",
+    "desc": " Half-sleeve lightweight t-shirt made from silky cotton. ",
+    "size": "Length: 64cm, Across Width (Chest): 67cm, Sleeve: 14cm",
+    "material": "100% Cotton.",
+    "path": "../../images/men-1.jpg",
+    "path2": "../../images/men-1_1.jpg",
+    "category": "men"
+  },
+  {
+    "id": "m-item2",
+    "name": "Menswear | Long Sleeve Boxy Tee, Caramel",
+    "price": "£46.00    ",
+    "desc": "A casual 100% cotton long sleeved tee characterised by its scoop neck and detailed stitching..",
+    "size": "Length: 67cm, Across Width (Chest): 65cm, Sleeve: 56cm",
+    "material": "100% Cotton.",
+    "path": "../../images/men-2.jpg",
+    "path2": "../../images/men-2_1.jpg",
+    "category": "men"
+  },
+  {
+    "id": "m-item3",
+    "name": "Menswear | Corduroy Shirt, Black",
+    "price": "£99.00",
+    "desc": "Heavyweight corduroy shirt with a flap pocket, faux pearl corozo buttons, a structured collar, and buttoned cuffs.",
+    "size": "Length: 80cm, Across Width (Chest): 67cm, Sleeve: 59cm..",
+    "material": "100% Polyester.",
+    "path": "../../images/men-3.jpg",
+    "path2": "../../images/men-3_1.jpg"
+  },
+  {
+    "id": "m-item4",
+    "name": "Menswear | Faux Leather Blouson, Brown",
+    "price": "£124.00",
+    "desc": "Structured faux leather jacket complete with an open collar, side pockets, a central metal zipper, and popper buttoned cuffs.",
+    "size": "Length: 67cm, Across Width (Chest): 63cm, Sleeve: 48cm.",
+    "material": "100% Polyester.",
+    "path": "../../images/men-4.jpg",
+    "path2": "../../images/men-4_1.jpg"
+  },
+  {
+    "id": "m-item5",
+    "name": "Menswear | Folded Sleeve Tee, Ivory",
+    "price": "£46.00",
+    "desc": "T-shirt with ribbed crew neck, delicate stitching, and turned-up sleeves.",
+    "size": "Length: 77cm, Across Width (Chest): 59cm, Sleeve: 21cm.",
+    "material": "100% Cotton.",
+    "path": "../../images/men-5.jpg",
+    "path2": "../../images/men-5_1.jpg"
+  },
+  {
+    "id": "m-item6",
+    "name": "Menswear | Viscose Shirt, Sage Grey",
+    "price": "£89.00",
+    "desc": "Our stylish lightweight shirt is complete with a relaxed open collar, central corozo buttons, and buttoned cuffs.",
+    "size": " 72cm, Across Width (Chest): 60cm, Sleeve: 55cm.",
+    "material": "100% Viscose",
+    "path": "../../images/men-6.jpg",
+    "path2": "../../images/men-6_1.jpg"
+  },
+  {
+    "id": "m-item7",
+    "name": "Menswear | Wool Bomber Jacket, Black",
+    "price": "£159.00",
+    "desc": "Our classic bomber is constructed from a heavyweight wool-blend fabric and is complete with ribbed neck, hem and cuffs, central two-way zipper, and deep side pockets.",
+    "size": "Length: 62cm, Across Width (Chest): 65cm, Sleeve: 47cm.",
+    "material": "70% Polyester, 30% Wool.",
+    "path": "../../images/men-7.jpg",
+    "path2": "../../images/men-7_1.jpg"
+  },
+  {
+    "id": "m-item8",
+    "name": "Menswear | Oversized Windowpane Shirt, Navy",
+    "price": "£69.00",
+    "desc": "Oversized, casual checked overshirt constructed from a midweight cotton, complete with central corozo buttons, a structured collar, breast pocket, and buttoned cuffs.",
+    "size": "Length: 81cm, Across Width (Chest): 71cm, Sleeve: 52cm.",
+    "material": "100% Cotton.",
+    "path": "../../images/men-8.jpg",
+    "path2": "../../images/men-8_1.jpg"
+  },
+  {
+    "id": "m-item9",
+    "name": "Menswear | Oversized Work Shirt, White ",
+    "price": "£74.00",
+    "desc": "A lightweight oversized shirt carefully crafted from 100% soft cotton. It is distinguished by its asymmetric patch pocket, white corozo buttons, and regular collar. ",
+    "size": "Length: 86cm, Across Width (Chest): 64cm, Sleeve: 66cm.",
+    "material": "100% Cotton.",
+    "path": "../../images/men-9.jpg",
+    "path2": "../../images/men-9_1.jpg"
+  },
+  {
+    "id": "m-item10",
+    "name": "Menswear | Classic Jeans, Blue",
+    "price": "£49.00",
+    "desc": "Our classic straight-leg jeans are constructed from heavyweight denim and are detailed with a matte black central button, metal zipper, traditional belt loops and deep front and back pockets.",
+    "size": "Length: 111cm, Inside Leg: 81cm, Leg Opening: 22cm, Rise: 27cm, Thigh (Across Width): 30cm, Waist: 30",
+    "material": "100% Cotton.",
+    "path": "../../images/men-10.jpg",
+    "path2": "../../images/men-10_1.jpg"
+  },
+  {
+    "id": "m-item11",
+    "name": "Menswear | Carpenter Jeans, Blue",
+    "price": "£69.00",
+    "desc": "Unique jeans constructed from a heavy-weight faded denim and feature two deep side pockets, traditional belt loops, metal zipper and abstract panels.",
+    "size": "103cm, Inside Leg: 74cm, Leg Opening: 21cm, Waist: 32",
+    "material": "100% Cotton.",
+    "path": "../../images/men-11.jpg",
+    "path2": "../../images/men-11_1.jpg"
+  },
+  {
+    "id": "m-item12",
+    "name": "Menswear | Heiko Wool Herringbone Trousers, Forest",
+    "price": "£79.00",
+    "desc": "Half lined, cropped, single pleated herringbone woollen trousers with characterful welted flap back pocket.    ",
+    "size": " Length: 101cm, Inseam: 74cm, Leg Opening: 20cm, Rise: 32cm, Thigh (Across Width): 32cm",
+    "material": "50% Polyester, 50% Wool.",
+    "path": "../../images/men-12.jpg",
+    "path2": "../../images/men-12_1.jpg"
+  }
+]
