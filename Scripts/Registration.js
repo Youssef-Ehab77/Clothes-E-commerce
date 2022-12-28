@@ -15,7 +15,8 @@ $(function () {
                 }
 
             } else {
-                alert('Please Enter at least 4 characters!');
+                // alert('Please Enter at least 4 characters!');
+                swal("Please Enter at least 4 characters!");
             }
         });
     }, 300);
