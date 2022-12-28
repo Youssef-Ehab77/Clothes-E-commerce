@@ -1,7 +1,7 @@
 
 /* * start styling of view products */
 .view-products{
-    width: 95%;
+    width: 91%;
    margin: auto;
    padding-bottom: 25px;
 }
@@ -13,7 +13,6 @@
     width: 100%;
     flex-direction: column;
 }
-
 
 .products-header-wrapper{
     display: flex;
@@ -49,6 +48,7 @@
 .product_details{
     position: relative;
 }
+
 
 .product_details img{
     width: 240px;
@@ -98,17 +98,21 @@
 /* * start styling of  carousel */
 
 .view-products .carousel{
-    width: 95%;
-    margin: auto;
+    width: 100%;
     position: relative;
 }
 
 .view-products .carousel-inner{
     display: flex;
-    justify-content: space-around;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.view-products .carousel-inner::-webkit-scrollbar {
+  display: none;
 }
 
-.view-products .carousel-inner-item{position: relative;}
+
+.view-products .carousel-inner-item{position: relative; margin-left: 10px;}
 
 
 .view-products .carousel .carousel-control-prev,

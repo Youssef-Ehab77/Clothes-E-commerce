@@ -48,7 +48,7 @@ ul {
 .nav-bar .brand-name {
     color: #EF8354;
     float: left;
-    width: 55%;
+    width: 50%;
     text-transform: uppercase;
     margin-top: 10px;   
 }
@@ -145,7 +145,7 @@ ul {
 .footer {
     background-color: #2D3142;
     color: #BFC0C0;
-    height: 280px;
+    height: 200px;
     overflow: hidden;
     display: flex;
     width: 100%;
@@ -198,7 +198,7 @@ ul {
     font-size: 20px;
     border-bottom: 2px solid #EF8354;
     margin-bottom: 10px;
-    padding-bottom: 10px;
+    padding: 10px 8px;
 }
 
 .footer .social-content {
@@ -239,7 +239,7 @@ ul {
 
 
 @media screen and (min-width:991px) and (max-width:1200px)  {
-    
+    .nav-bar li{font-size: 12px;  padding: 5px 10px!important; margin-left: 15px;}
     .nav-bar .brand-name {width: 40%!important }
     .nav-bar .links {  width: 55%!important  }
     .footer .footer-content { width: 85%!important }
@@ -250,6 +250,9 @@ ul {
         align-items: center;
         flex-direction: column;
     }
+    .footer .footer-content li {font-size: 13px;}
+    .footer .footer-column h4 {font-size: 15px;}
+
     .footer .footer-content {display: flex; margin-bottom: 40px;} 
     .footer .footer-column {
         margin-left: 10px;
