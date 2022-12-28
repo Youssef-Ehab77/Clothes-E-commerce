@@ -24,6 +24,11 @@ $(function () {
                 document.location.href = '../HTML/Index.html';
         } else {
             alert('Wrong Username or Password!');
+            console.log(username)
+            console.log(password)
+            console.log(getCookie('username') )
+            console.log(getCookie('password'))
+
         }
     });
 
