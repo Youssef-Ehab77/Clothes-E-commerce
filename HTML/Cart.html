@@ -10,8 +10,10 @@
     <title>Cart</title>
     <link rel="stylesheet" href="../CSS/Cart.css"/>
 </head>
-<body>
-    <header></header>
+<body class="cart-body">
+
+    <header id="header"></header>
+
 
 <main class="main">
     <section class="addOn">
@@ -23,7 +25,7 @@
         <div class="list-details">
             <div class="product-details">Product details</div>
             <div class="quantity">Quantity</div>
-            <div class="price">Price</div>
+            <div class="price-detail">Price</div>
             <div class="total">Total</div>
         </div>
 
@@ -36,10 +38,10 @@
     <section class="shipping-details">
 
 
-        <div>Shipping Details</div>
+        <div class="shipping-details-title" style="margin-bottom: 25px; margin-top: 25px">Shipping Details</div>
         <hr>
         <br>
-
+        <br>
         <div class="inputs">
 
 
@@ -60,18 +62,122 @@
                 <input type="number" class="user-mobile" name="usermobile">
 
 
-        </div>
-
-        <div>
+            </div>
             
-        </div>
+            <div class="total-price">Total Price: </div>
+                
+                <button class="proceeder" type="button">CHECKOUT</button>
+                <br>
+                <hr>
+
+                <button type="button" class="continue-shopping">← Continue Shopping</button>
 
         </section>
 
     </main>
 
 
-    <footer></footer>
+<div class="checkout" hidden>
+    <br>
+<div class="gridder">
+    <div class="billing-address-title">Billing Address</div>
+
+    <div class="payment-title">Payment</div>
+
+    <div class="full-name-holder">
+        <label class="full-name-label" for="full-name">Full Name: </label>
+        <input type="text" class="full-name" name="fullname">
+    </div>
+
+    <div>
+        <div>Accepted Cards: </div>
+        <div class="cards-images-holder">
+            <div><img src="../Images/paypal.png"></div>
+            <div><img src="../Images/visa.png"></div>
+            <div><img src="../Images/mastercard.png"></div>
+
+        </div>
+    </div>
+
+
+    <div class="email-holder">
+        <label class="email" for="email">Email Address: </label>
+        <input type="text" class="email" name="email">
+    </div>
+
+
+    <div class="card-name-holder">
+        <label class="card-name" for="cardname">Name on Card: </label>
+        <input type="text" class="card-name" name="cardname">
+    </div>
+
+
+    <div class="address-holder">
+        <label class="address" for="address">Address: </label>
+        <input type="text" class="address" name="address">
+    </div>
+
+
+    <div class="ccnumber-holder">
+        <label class="ccnumber" for="ccnumber">Credit Card Number: </label>
+        <input type="number" class="ccnumber" name="ccnumber">
+    </div>
+
+
+    <div class="country-holder">
+        <label class="country" for="country">Country: </label>
+        <input type="text" class="country" name="country">
+    </div>
+
+
+
+    <div class="exp-month-holder">
+        <label class="exp-month" for="expmonth">Exp Month: </label>
+        <input type="text" class="exp-month" name="expmonth">
+    </div>
+
+</div>
+
+<br><br>
+
+
+    <div class="city-zip-exp-cvv-holder">
+
+        <div>
+            <div class="city-holder">
+                <label class="city-label" for="city">City: </label>
+                <input type="text" class="city" name="city">
+            </div>
+    
+            <div class="zip-holder">
+                <label class="zip-label" for="zip">Zip: </label>
+                <input type="number" class="zip" name="zip">
+            </div>
+        </div>
+
+    
+        <br>
+
+        <div>
+            <div class="cvv-holder">
+                <label class="cvv-label" for="cvv">CVV: </label>
+                <br>
+                <input type="number" class="cvv" name="cvv">
+            </div>
+    
+            <div class="exp-year-holder"></div>
+                <label class="exp-year-label" for="exp-year">Exp Year: </label>
+                <br>
+                <input type="number" class="exp-year" name="expyear">
+            <div class="cvv"></div>
+        </div>
+
+    </div>
+    <button class="pay" class="proceed-btn" type="button"></button>
+</div>
+
+
+<footer id="footer"></footer>
 
     </div>
 </body>
