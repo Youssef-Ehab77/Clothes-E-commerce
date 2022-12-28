@@ -130,10 +130,52 @@ $(function() {
 }, 100)
 
 
-$('.proceed-btn').click(function(){
-    $('.checkout').show()
+$('.proceeder').on('click', (function(){
+    $('.checkout').show();
 }
-)
+))
+
+
+$(document).mouseup(function(p) 
+{
+    var checkout = $('.checkout');
+    if (!checkout.is(p.target) && !checkout.has(p.target).length) {
+      checkout.hide();
+    }
+  });
+
+
+$(".pay").text('Pay ' + check_price + '$')
+
+$(".pay").click(function(){
+    $(".checkout").empty();
+    var fName = $(".full-name").val().split(" ")[0];
+
+    $(".checkout").append('<section class="empty-cart">' +
+    '<div class="empty-pay-text">Thanks for your payment, ' + fName + '!</div>' +
+    '<button type="button" class="pay-shopping-btn" class="continue-shopping">← Continue Shopping</button>' +
+'</section>')
+
+    $(".checkout").width('500px');
+    $(".checkout").height('300px');
+    $(".checkout").css('margin', 'auto');
+    $(".checkout").css('margin-top', '200px');
+    $(".checkout").css('margin-bottom', '200px');
+
+    $(document).mouseup(function(p) 
+{
+    var checkout = $('.checkout');
+    if (!checkout.is(p.target) && !checkout.has(p.target).length) {
+      window.open('../HTML/Categories.html'); //home page
+    }
+
+    $(".pay-shopping-btn").click(function () {
+        window.open('../HTML/Categories.html'); //home page
+    })
+    
+
+  });
+})
 
 
 }
