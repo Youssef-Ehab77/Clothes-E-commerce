@@ -83,7 +83,7 @@ ul {
     background-color: #2D3142;
     color: #BFC0C0;
     height: 200px;
-    overflow: hidden;
+    /*overflow: hidden;*/
     display: flex;
     width: 100%;
     /*bottom: 0;*/
