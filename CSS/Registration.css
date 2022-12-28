@@ -15,11 +15,13 @@
 
 .register-form {
     text-align: center;
-    margin: 20px;
-    border: 1px solid #d1d1d1;
+    /*margin: 20px;*/
+    /*border: 1px solid #d1d1d1;*/
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 3px 5px gray;
+    /*border-radius: 10px;*/
+    /*box-shadow: 0 3px 5px gray;*/
+    margin-bottom: 30px;
+
     /*min-width: 550px;*/
     /*max-width: 600px;*/
 }
@@ -55,25 +57,29 @@
 .site-quote {
     font-size: 25px;
     margin: 10px;
+    color: #FFFFFF;
 
 }
 
 .logo-h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: #EF8354;
-    -webkit-text-stroke-width: 0.3px;
-    -webkit-text-stroke-color: black;
 }
 
 .register-container {
     display: none;
+    /*visibility: hidden;*/
     position: absolute;
     z-index: 999;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #2D3142;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    /*box-shadow: 0 0 15px #2D3142;*/
 }
+
 
 body {
     position: relative;

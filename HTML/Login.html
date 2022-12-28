@@ -8,25 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/HeaderAndFooter.css"/>
+
 </head>
 <body>
-<div class="parent">
-<div class="register-container">
-    <div class="container">
-        <div class="welcome">
-            <h1 class="logo-h1">Sign Up</h1>
-            <h2 class="site-quote">Quick And Easy</h2>
-        </div>
-        <div class="register-form-container">
-            <div class="register-form">
-                <input id="username" class="register-input-text" type="text" placeholder="New Username">
-                <input id="password" class="register-input-text" type="password" placeholder="New Password">
-                <button id="sign-up-btn" class="sign-up-btn">Sign Up</button>
-            </div>
-        </div>
-    </div>
-</div>
-</div>
+<div id="registration-page"></div>
 <div class="login-container">
     <div class="welcome">
         <h1 class="logo-h1">BOHO..</h1>
@@ -35,9 +21,9 @@
     </div>
     <div class="login-form-container">
         <div class="login-form">
-            <input class="login-input-text" type="text" placeholder="Username">
-            <input class="login-input-text" type="text" placeholder="Password">
-            <a class="login-btn" href="#">Log in</a>
+            <input id="l-username" class="login-input-text" type="text" placeholder="Username">
+            <input id="l-password" class="login-input-text" type="password" placeholder="Password">
+            <a id="login-btn" class="login-btn" href="#">Log in</a>
             <a id="sign-up" class="create-new-account-btn" href="#">Create New Account</a>
         </div>
     </div>
@@ -45,5 +31,7 @@
 <footer id="footer"></footer>
 </body>
 <script src="../Scripts/jquery.js"></script>
+<script src="../Scripts/Cookie.js"></script>
 <script src="../Scripts/Login.js"></script>
+<script src="../Scripts/Registration.js"></script>
 </html>
