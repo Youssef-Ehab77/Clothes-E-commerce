@@ -16,7 +16,8 @@ $(function() {
                 number_of_items += 1;
                 check_price += parseInt(item.price);
                 //console.log(item.price)
-
+            
+            //if item.name in cookies 
                 $(".addOn").append(
                 
             "<div class='product'>" +
@@ -126,6 +127,9 @@ $(function() {
             $(".empty-text").css('white-space', 'nowrap');
             }
 
+            $(".continue-shopping").click(function () {
+                window.location = '../HTML/Categories.html'; //home page
+            })
         });
 }, 100)
 
@@ -177,6 +181,8 @@ $(".pay").click(function(){
     
 
   });
+
+
 })
 
 

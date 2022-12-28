@@ -104,7 +104,7 @@ body {
     top: 2px;
   }
 
-  .proceeder {
+  .proceeder:active{
     background-color: #EF8354;
     box-shadow: 0 2px #666;
     top: 5px;
