@@ -41,8 +41,9 @@ $(function(){
     var isSignUp = location.hash.substring(1)
     console.log(isSignUp)
     if(isSignUp === 'sign-up'){
-       console.log(document.querySelector('.register-container'))
-        $('.register-container').css('display' , 'block');
-        $('.login-container').css('filter', 'blur(3px)')
+        $('.login-container').css('filter', 'blur(3px)');
+        setTimeout(function (){
+            $('.register-container').show().slideDown();
+        },500)
     }
 })

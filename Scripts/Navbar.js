@@ -14,7 +14,6 @@ $(function(){
         $('#login span').text(isLogined);
         $('.account-settings').get(0).children[0].innerText = 'Logout';
         $('.account-settings').get(0).children[0].setAttribute ('id' , 'logout');
-
         $('.account-settings').get(0).children[1].remove()
         $('.account-settings').css('height','50px')
     }
@@ -33,10 +32,8 @@ $(function(){
 //* logout handler
 $(function(){
     $('#logout').click(function(){
-        console.log("logout")
-        deleteCookie('username')
-        deleteCookie('password')
-        location.reload()
+        console.log("logout");
+        location.reload();
 
     })
 })
