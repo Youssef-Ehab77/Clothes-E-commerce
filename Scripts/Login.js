@@ -23,7 +23,8 @@ $(function () {
         if (username.length >= 4 && password.length >= 4 && getCookie('username') === username && getCookie('password') === password) {
                 document.location.href = '../HTML/Index.html';
         } else {
-            alert('Wrong Username or Password!');
+            // alert('Wrong Username or Password!');
+            swal("Wrong Username or Password!"); 
             console.log(username)
             console.log(password)
             console.log(getCookie('username') )

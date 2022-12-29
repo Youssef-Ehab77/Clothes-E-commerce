@@ -10,12 +10,10 @@ $(function () {
 
                 setCookie('username', username, date);
                 setCookie('password', password, date);
-                if (confirm("Signed Up Successfully! \n Head To the Home Page Now")) {
-                    document.location.href = '../HTML/Index.html';
-                }
+                swal("Signed Up Successfully!");
 
             } else {
-                alert('Please Enter at least 4 characters!');
+                swal("Please Enter at least 4 characters!");
             }
         });
     }, 300);

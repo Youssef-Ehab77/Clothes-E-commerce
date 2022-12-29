@@ -19,12 +19,13 @@ body {
 }
 .path-product {
   height: 70px;
-  width: 90%;
+  width: 80%;
   margin: 10px;
   padding-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border: 1px solid black;
+  /*   border: 1px solid black;
+ */
 }
 .path-product h3 {
   color: var(--border-color);
@@ -32,13 +33,15 @@ body {
 .product-data {
   display: flex;
 
-  border: 1px solid black;
+  /*   border: 1px solid black;
+ */
   height: 120vh;
   width: 80%;
 }
 .product-img {
   width: 50%;
-  border: 1px solid black;
+  /*   border: 1px solid black;
+ */
 }
 .product-img img {
   width: 600px;
@@ -50,4 +53,81 @@ body {
 }
 .product-desc {
   width: 40%;
+}
+.product-desc hr {
+  color: var(--light);
+}
+.product-desc h1,
+h4 {
+  color: var(--border-color);
+  padding: 0.2em 0em;
+}
+.product-desc p,
+h4 {
+  color: var(--border-color);
+  padding: 0.2em 0.5em;
+}
+select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 15ch;
+  height: 50px;
+  border: 1px solid var(--border-color);
+  border-radius: 0.25em;
+  padding: 0.25em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  background-color: #fff;
+  color: var(--light);
+}
+select:focus {
+  outline: none;
+}
+.quantity-styling {
+  width: 27%;
+  padding: 0.5em 0.5em;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5em;
+  color: var(--light);
+}
+.quantity-styling button {
+  background-color: white;
+  border: none;
+  border-radius: 0.5em;
+  text-align: center;
+  width: 30%;
+  font-size: 30px;
+  color: var(--light);
+}
+.quantity-styling input {
+  background-color: white;
+  border: none;
+  color: var(--light);
+
+  width: 40%;
+
+  font-size: 30px;
+  text-align: center;
+
+  width: 50px;
+}
+.quantity-styling input:focus {
+  outline: none;
+}
+
+.add-to-cart {
+  width: 40%;
+  height: 70px;
+  background-color: var(--dark-Gray);
+  font-size: 20px;
+  color: white;
+  padding: 14px 20px;
+  margin: 40px 0px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.add-to-cart:hover {
+  background-color: var(--light);
+  color: var(--dark-Gray);
 }
