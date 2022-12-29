@@ -1,5 +1,5 @@
 
-
+//* get path of json file by category  
 function getCategoryPath(category){
     var path 
     //* women category
@@ -13,12 +13,13 @@ function getCategoryPath(category){
     } 
     //* Sale
     else{
-        path = "../../Data/Men.json";
+        path = "../../Data/Sale.json";
     }
     return path
 
 }
 
+//* load data into html file
 function loadData(category){
     var path = getCategoryPath(category)
     //* Get data from json file
@@ -33,18 +34,19 @@ function loadData(category){
                 var data = JSON.parse(xhr.response).sort((a, b) => 0.5 - Math.random());;
                 for(var i=0; i<8;i++){
                     //* append product items from json file into html file
-                    console.log($('.carousel-inner-item'))
-                    $('.carousel-inner-item').eq(i).append(
-                        `
-                            <div class="product_details">
-                                <div class="Overlay"></div>
-                                <img src='${data[i].path}' />            
-                            </div>
-                            <button class="btn-carousel-view-details">
-                                <a href = './Product.html?id=${data[i].id}' > View Details </a>
-                            </button>
-                        `
-                    )
+                    $('.carousel-inner-item').eq(i).animate(5000,function(){
+                        $('.carousel-inner-item').eq(i).append(
+                            `
+                                <div class="product_details">
+                                    <div class="Overlay"></div>
+                                    <img src='${data[i].path2}' />            
+                                </div>
+                                <button class="btn-carousel-view-details">
+                                    <a href = './Product.html?id=${data[i].id}' > View Details </a>
+                                </button>
+                            `
+                        )
+                    })
                     
                 }
             }
@@ -56,14 +58,51 @@ function loadData(category){
     
 }  
 
-
+//* load women products automatically
 $(function(){
     loadData('women')
     
 })
 
 
+//* Toggle Taps
+$(function(){
+    var category = ''
+    $('.products-header-wrapper').children(0).children(1).click(function(){
+        category = $(this).eq(0).attr('id')
+        
+        $(this).get(0).classList.add('active')
+        //* delete active class from siblings [other taps]
+        $(this).parent().siblings().each(function(){
+            $(this).eq(0).children(0).get(0).classList.remove('active')
+        })
+
+        
+        $(".carousel-inner-item").children().detach()
+        loadData(category)
+
+       
+
+    })
+   
+   
+})
     
+//* slider handler
+document.querySelectorAll('.view-products .carousel-inner').forEach(function(item){
+    var containerDimensions = item.getBoundingClientRect();
+    var containerWidth = containerDimensions.width;
+    
+    document.querySelector('.carousel-control-next').addEventListener('click', () => {
+        console.log(item.scrollLeft , containerWidth)
+        item.scrollLeft += containerWidth;
+        console.log(item.scrollLeft)
+    })
+
+    document.querySelector('.carousel-control-prev').addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
     
 
 

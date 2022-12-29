@@ -6,8 +6,8 @@
         "desc"      : "Our comfortable jumper is constructed from a soft-to-touch wool-blend and features a regular ribbed crew-neck, a decorative cable-knit and ribbed edges.A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 56cm",
         "material"  : "40% Wool, 30% Acrylic, 30% Polyamide.",
-        "path"      : "../Images/Products/Women/women-1.jpg",
-        "path2"     : "../Images/Products/Women/women-1_1.jpg",
+        "path2"      : "../Images/Products/Women/women-1.jpg",
+        "path"     : "../Images/Products/Women/women-1_1.jpg",
         "category"  : "women"
     },
     {
@@ -17,8 +17,8 @@
         "desc"      : "Super soft cropped tee with short sleeves and a crew neck. A UK 6 - 8 can expect a relaxed fit whilst a UK 10 will wear more fitted..",
         "size"      : "Length: 46cm, Across Width (Bust): 43cm",
         "material"  : "70% Acrylic, 30% Polyester.",
-        "path"      : "../Images/Products/Women/women-2.jpg",
-        "path2"     : "../Images/Products/Women/women-2_1.jpg"
+        "path2"      : "../Images/Products/Women/women-2.jpg",
+        "path"     : "../Images/Products/Women/women-2_1.jpg"
     },
     {
         "id"        : "w-item3",
@@ -27,8 +27,8 @@
         "desc"      : "Boxy cut, cropped rugby shirt with a mandarin collar and hidden half button down fastening. With dropped shoulder sleeves, a UK size 6 - 8 can expect a slouchy silhouette whilst a UK size 12 will wear more fitted.",
         "size"      : " Length: 50cm, Across Width (Bust): 61cm, Sleeve: 48cm.",
         "material"  : "100% Cotton.",
-        "path"      : "../Images/Products/Women/women-3.jpg",
-        "path2"     : "../Images/Products/Women/women-3_1.jpg"
+        "path2"      : "../Images/Products/Women/women-3.jpg",
+        "path"     : "../Images/Products/Women/women-3_1.jpg"
     },
     {
         "id"        : "w-item4",
@@ -37,8 +37,8 @@
         "desc"      : "Boxy fit cotton tee with a crew neck and embroidered dandelions all over. A UK size 6 - 8 can expect a slouchy fit whilst a UK size 12 will wear more fitted.",
         "size"      : "Length: 66cm, Across Width (Bust): 52cm, Sleeve: 11cm.",
         "material"  : "100% Cotton.",
-        "path"      : "../Images/Products/Women/women-4.jpg",
-        "path2"     : "../Images/Products/Women/women-4_1.jpg"
+        "path2"      : "../Images/Products/Women/women-4.jpg",
+        "path"     : "../Images/Products/Women/women-4_1.jpg"
     },
     {
         "id"        : "w-item5",
@@ -47,8 +47,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
         "material"  : "80% Wool, 20% Polyamide.",
-        "path"      : "../Images/Products/Women/women-5.jpg",
-        "path2"     : "../Images/Products/Women/women-5_1.jpg"
+        "path2"      : "../Images/Products/Women/women-5.jpg",
+        "path"     : "../Images/Products/Women/women-5_1.jpg"
     },
     {
         "id"        : "w-item6",
@@ -57,8 +57,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
         "material"  : "60% Polyester, 38% Acrylic, 2% Elastane.",
-        "path"      : "../Images/Products/Women/women-6.jpg",
-        "path2"     : "../Images/Products/Women/women-6_1.jpg"
+        "path2"      : "../Images/Products/Women/women-6.jpg",
+        "path"     : "../Images/Products/Women/women-6_1.jpg"
     },
     {
         "id"        : "w-item7",
@@ -67,8 +67,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
         "material"  : "60% Wool, 20% Polyamide, 20% Viscose.",
-        "path"      : "../Images/Products/Women/women-7.jpg",
-        "path2"     : "../Images/Products/Women/women-7_1.jpg"
+        "path2"      : "../Images/Products/Women/women-7.jpg",
+        "path"     : "../Images/Products/Women/women-7_1.jpg"
     }
     ,
     {
@@ -78,8 +78,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
         "material"  : "100% Cotton.",
-        "path"      : "../Images/Products/Women/women-8.jpg",
-        "path2"     : "../Images/Products/Women/women-8_1.jpg"
+        "path2"      : "../Images/Products/Women/women-8.jpg",
+        "path"     : "../Images/Products/Women/women-8_1.jpg"
     },
     {
         "id"        : "w-item9",
@@ -88,8 +88,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
         "material"  : "100% Cotton.",
-        "path"      : "../Images/Products/Women/women-9.jpg",
-        "path2"     : "../Images/Products/Women/women-9_1.jpg"
+        "path2"      : "../Images/Products/Women/women-9.jpg",
+        "path"     : "../Images/Products/Women/women-9_1.jpg"
     },
     {
         "id"        : "w-item10",
@@ -98,8 +98,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
         "material"  : "60% Wool, 20% Polyamide, 20% Acrylic.",
-        "path"      : "../Images/Products/Women/women-10.jpg",
-        "path2"     : "../Images/Products/Women/women-10_1.jpg"
+        "path2"      : "../Images/Products/Women/women-10.jpg",
+        "path"     : "../Images/Products/Women/women-10_1.jpg"
     },
     {
         "id"        : "w-item11",
@@ -108,8 +108,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 57cm, Across Width (Bust): 61cm, Sleeve: 42cm.",
         "material"  : "90% Wool, 10% Polyamide.",
-        "path"      : "../Images/Products/Women/women-11.jpg",
-        "path2"     : "../Images/Products/Women/women-11_1.jpg"
+        "path2"      : "../Images/Products/Women/women-11.jpg",
+        "path"     : "../Images/Products/Women/women-11_1.jpg"
     },
     {
         "id"        : "w-item12",
@@ -118,8 +118,8 @@
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : " Length: 63cm, Across Width (Bust): 61cm, Sleeve: 49cm.",
         "material"  : "100% Polyester.",
-        "path"      : "../Images/Products/Women/women-12.jpg",
-        "path2"     : "../Images/Products/Women/women-12_1.jpg"
+        "path2"      : "../Images/Products/Women/women-12.jpg",
+        "path"     : "../Images/Products/Women/women-12_1.jpg"
     }
     
     

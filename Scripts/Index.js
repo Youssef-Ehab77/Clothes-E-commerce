@@ -24,7 +24,7 @@ $(function() {
         //* footer-component
         $("#footer-component").load("../HTML/Components/Footer.html");
         
-    },1000)
+    },2000)
     
 });
 
