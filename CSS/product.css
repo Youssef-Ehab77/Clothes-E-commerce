@@ -98,17 +98,16 @@ select:focus {
   width: 30%;
   font-size: 30px;
   color: var(--light);
+  cursor: pointer;
 }
+
 .quantity-styling input {
   background-color: white;
   border: none;
   color: var(--light);
-
   width: 40%;
-
   font-size: 30px;
   text-align: center;
-
   width: 50px;
 }
 .quantity-styling input:focus {
