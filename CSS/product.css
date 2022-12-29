@@ -1,21 +1,23 @@
 body {
-  height: 200vh;
+  height: auto!important;
 }
 .free-shipping {
   height: 50px;
   width: 100%;
-  border: 1px solid var(--light);
+  border: 0px solid var(--light);
   background-color: #f6f5f1;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* * create box shadow */
+  box-shadow: 1px 5px 5px rgb(211, 211, 211);
 }
 .container-1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .path-product {
   height: 70px;
@@ -32,20 +34,31 @@ body {
 }
 .product-data {
   display: flex;
+  height: 130vh;
+  width: 80%;
+  margin-bottom: 20px;
 
   /*   border: 1px solid black;
+  
  */
-  height: 120vh;
-  width: 80%;
 }
 .product-img {
+  
   width: 50%;
   /*   border: 1px solid black;
  */
 }
 .product-img img {
-  width: 600px;
+  /** width */
+  width: 90%;
+  cursor: pointer;
+  /*
+  width:500px 
+  height: auto; 
+  */
+  /** height */
   height: auto;
+
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -53,6 +66,7 @@ body {
 }
 .product-desc {
   width: 40%;
+  height: 100%;
 }
 .product-desc hr {
   color: var(--light);
@@ -84,7 +98,8 @@ select:focus {
   outline: none;
 }
 .quantity-styling {
-  width: 27%;
+  width: 35%!important;
+
   padding: 0.5em 0.5em;
   border: 1px solid var(--border-color);
   border-radius: 0.5em;
@@ -96,18 +111,19 @@ select:focus {
   border-radius: 0.5em;
   text-align: center;
   width: 30%;
-  font-size: 30px;
+  font-size: 20px;
   color: var(--light);
-  cursor: pointer;
 }
-
 .quantity-styling input {
   background-color: white;
   border: none;
   color: var(--light);
+
   width: 40%;
+
   font-size: 30px;
   text-align: center;
+
   width: 50px;
 }
 .quantity-styling input:focus {
@@ -121,7 +137,7 @@ select:focus {
   font-size: 20px;
   color: white;
   padding: 14px 20px;
-  margin: 40px 0px;
+  margin: 30px 0px;
   border: none;
   border-radius: 7px;
   cursor: pointer;
