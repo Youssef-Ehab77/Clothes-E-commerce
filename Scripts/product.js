@@ -81,7 +81,7 @@ document.getElementById("inc-quantity").onclick = function () {
 document.getElementById("dec-quantity").onclick = function () {
   var textVal = document.getElementById("crnt-quantity").value;
 
-  if (textVal > 0)
+  if (textVal > 1)
     document.getElementById("crnt-quantity").value = parseInt(textVal) - 1;
 };
 var cookieNameCntr = 0;
