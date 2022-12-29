@@ -2,7 +2,7 @@ let products = [];
 //console.log(window.location);
 //https://api.escuelajs.co/api/v1/products
 //../JSON/Products.json
-$.ajax("../JSON/Products.json", {
+$.ajax("../Data/Men.json", {
     type: "GET",
     dataType: "json",
     success: function (productsData) {
@@ -16,21 +16,26 @@ setTimeout(function () {
     for (let i in products) {
         $('.main').append(
             "<div class=\"card\">\n" +
+            "    <div style='width: 0;height: 0; font-size: 0'>"+products[i].id+"</div> "+
             "    <div class=\"card-img\">\n" +
-            "        <img src=\"" + products[i].src + "\" alt=\"loading\">\n" +
+            "        <img src=\"" + products[i].path + "\" alt=\"loading\">\n" +
             "    </div>\n" +
             "    <div class=\"card-info\">\n" +
             "        <div class=\"card-name\">" + products[i].name + "</div>\n" +
             "        <div class=\"card-price\">" + products[i].price + "</div>\n" +
             "    </div>\n" +
             "</div>"
-        )
-
+        );
     }
     $('.card').click(function () {
         let data = this.innerText.split('\n');
-        window.location = '../HTML/Cart.html?product=' + data[0];
+        window.open('../HTML/Product.html?id=' + data[0]);
+         //window.location = '../HTML/Product.html?id=' + data[0];
     });
+
+    //.hover(function (){
+    //         console.log(this.getElementsByTagName('div')[0].textContent);
+    //     });
 
 
 }, 300);
@@ -46,9 +51,9 @@ $(function () {
 
 
 ////////////carousel JS/////////////////////////////
-  
+
 var oldx;
-  
+
 $("#left").on("click", function () {
 
   oldx = document.querySelector('.box1').getBoundingClientRect();
@@ -69,7 +74,7 @@ $("#left").on("click", function () {
   var offsets6 = document.querySelector('.box6').getBoundingClientRect();
   var offsets7 = document.querySelector('.box7').getBoundingClientRect();
   var offsets8 = document.querySelector('.box8').getBoundingClientRect();
-  
+
     $(".box1").css("left" , offsets1.left-10+"px")
     $(".box2").css("left" , offsets2.left-10+"px")
     $(".box3").css("left" , offsets3.left-10+"px")
@@ -78,10 +83,10 @@ $("#left").on("click", function () {
     $(".box6").css("left" , offsets6.left-10+"px")
     $(".box7").css("left" , offsets7.left-10+"px")
     $(".box8").css("left" , offsets8.left-10+"px")
-    
+
   },30)
 }
-   
+
 });
 
 
@@ -105,7 +110,7 @@ $("#right").on("click", function () {
   var offsets6 = document.querySelector('.box6').getBoundingClientRect();
   var offsets7 = document.querySelector('.box7').getBoundingClientRect();
   var offsets8 = document.querySelector('.box8').getBoundingClientRect();
-  
+
     $(".box1").css("left" , offsets1.left+10+"px")
     $(".box2").css("left" , offsets2.left+10+"px")
     $(".box3").css("left" , offsets3.left+10+"px")
@@ -114,10 +119,10 @@ $("#right").on("click", function () {
     $(".box6").css("left" , offsets6.left+10+"px")
     $(".box7").css("left" , offsets7.left+10+"px")
     $(".box8").css("left" , offsets8.left+10+"px")
-    
+
   },30)
 }
-   
+
 });
 
 
