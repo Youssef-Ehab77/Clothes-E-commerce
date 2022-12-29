@@ -38,15 +38,16 @@ xhr.onreadystatechange = function () {
         if (data[i].id == productID) {
           idx = i;
           break;
-        } else {
-          // if the item is not in the json file
-          //If there is no "id" in the query
-          document.getElementsByTagName("body")[0].innerHTML =
-            " ITEM NOT FOUND.. you wii be redirected to home page in 3 seconds...";
-          setTimeout(() => {
-            document.location.href = "/HTML";
-          }, 3000);
         }
+      }
+      // if the item is not in the json file
+
+      if (i == data.length) {
+        document.getElementsByTagName("body")[0].innerHTML =
+          " ITEM NOT FOUND.. you wii be redirected to home page in 3 seconds...";
+        setTimeout(() => {
+          document.location.href = "/HTML";
+        }, 3000);
       }
       /// filling the Data of The item specified
       document.getElementById("category-name").innerHTML = productCat;
@@ -72,7 +73,6 @@ xhr.send();
 //plus button
 document.getElementById("inc-quantity").onclick = function () {
   var textVal = document.getElementById("crnt-quantity").value;
-
   document.getElementById("crnt-quantity").value = parseInt(textVal) + 1;
 };
 
