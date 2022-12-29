@@ -109,6 +109,8 @@
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
+    width: 60vh;
+    width: 100%;
 }
 .view-products .carousel-inner::-webkit-scrollbar {
   display: none;

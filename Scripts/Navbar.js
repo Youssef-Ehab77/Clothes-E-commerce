@@ -33,10 +33,6 @@ $(function(){
 //* logout handler
 $(function(){
     $('#logout').click(function(){
-        console.log("logout")
-        deleteCookie('username')
-        deleteCookie('password')
         location.reload()
-
     })
 })
