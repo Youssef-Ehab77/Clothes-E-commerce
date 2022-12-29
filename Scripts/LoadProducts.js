@@ -13,7 +13,7 @@ function getCategoryPath(category){
     } 
     //* Sale
     else{
-        path = "../../Data/Men.json";
+        path = "../../Data/Sale.json";
     }
     return path
 
