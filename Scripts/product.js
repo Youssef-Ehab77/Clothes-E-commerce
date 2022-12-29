@@ -34,8 +34,10 @@ xhr.onreadystatechange = function () {
           break;
         }
       }
-      document.getElementById("product-img").src = data[idx].path;
+      document.getElementById("category-name").innerHTML = productCat;
+      document.getElementById("pro-name").innerHTML = data[idx].name;
 
+      document.getElementById("product-img").src = data[idx].path;
       document.getElementById("product-name").innerHTML = data[idx].name;
       document.getElementById("product-price").innerHTML = data[idx].price;
       document.getElementById("product-desc").innerHTML = data[idx].desc;
@@ -52,3 +54,18 @@ xhr.onreadystatechange = function () {
   }
 };
 xhr.send();
+
+//plus button
+document.getElementById("inc-quantity").onclick = function () {
+  var textVal = document.getElementById("crnt-quantity").value;
+
+  document.getElementById("crnt-quantity").value = parseInt(textVal) + 1;
+};
+
+//minus button
+document.getElementById("dec-quantity").onclick = function () {
+  var textVal = document.getElementById("crnt-quantity").value;
+
+  if (textVal > 0)
+    document.getElementById("crnt-quantity").value = parseInt(textVal) - 1;
+};
