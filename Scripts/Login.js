@@ -9,12 +9,13 @@ $(function () {
             $('.login-container').css('filter', 'blur(0)')
         }
     });
-
+    
     $('#sign-up').click(function () {
         $('.register-container').show().slideDown();
         $('.login-container').css('filter', 'blur(3px)')
         // let newWindow = open("../HTML/Registration.html", "", "left=" + 500 + ",top=" + 100 + ",width=600,height=600");
     });
+    
 
     $('#login-btn').click(function (){
         let username = $('#l-username').get(0).value;
@@ -35,3 +36,13 @@ $(function () {
 
 });
 
+//* handle when click on sing-up from home-page
+$(function(){
+    var isSignUp = location.hash.substring(1)
+    console.log(isSignUp)
+    if(isSignUp === 'sign-up'){
+       console.log(document.querySelector('.register-container'))
+        $('.register-container').css('display' , 'block');
+        $('.login-container').css('filter', 'blur(3px)')
+    }
+})
