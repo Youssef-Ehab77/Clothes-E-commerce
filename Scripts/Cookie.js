@@ -1,48 +1,48 @@
 function getCookie(cookieName) {
-    var name = cookieName + "=";
+  var name = cookieName + "=";
 
-    var Arrofcookie = document.cookie.split(';');
+  var Arrofcookie = document.cookie.split(";");
 
-    for (var i = 0; i < Arrofcookie.length; i++) {
-        var v = Arrofcookie[i].trim();
+  for (var i = 0; i < Arrofcookie.length; i++) {
+    var v = Arrofcookie[i].trim();
 
-        if (v.indexOf(name) === 0) {
-            return v.substring(name.length, v.length);
-        }
+    if (v.indexOf(name) === 0) {
+      return v.substring(name.length, v.length);
     }
-    return "";
+  }
+  return "";
 }
 
 function setCookie(cookieName, cookieValue, expiryDate) {
-    if (expiryDate && isDate(expiryDate)) {
-        document.cookie = cookieName + "=" + cookieValue + ";" + "expires=" + expiryDate + ";";
-    } else
-        document.cookie = cookieName + "=" + cookieValue + ";";
+  if (expiryDate && isDate(expiryDate)) {
+    document.cookie =
+      cookieName + "=" + cookieValue + ";" + "expires=" + expiryDate + ";";
+  } else document.cookie = cookieName + "=" + cookieValue + ";";
 }
 
 function deleteCookie(cookieName) {
-    document.cookie = cookieName + "=" + ";" + "expires=" + new Date() + ";";
+  document.cookie = cookieName + "=" + ";" + "expires=" + new Date() + ";";
 }
 
 function allCookieList() {
-    let cookiesList = new Map;
-    let newCookie = document.cookie;
-    let cookieParts = newCookie.replaceAll(";", "").split(" ");
-    for (let i = 0; i < cookieParts.length; i++) {
-        let temp = cookieParts[i].split("=");
-        cookiesList.set(temp[0], temp[1]);
-    }
-    return cookiesList;
+  let cookiesList = new Map();
+  let newCookie = document.cookie;
+  let cookieParts = newCookie.replaceAll(";", "").split(" ");
+  for (let i = 0; i < cookieParts.length; i++) {
+    let temp = cookieParts[i].split("=");
+    cookiesList.set(temp[0], temp[1]);
+  }
+  return cookiesList;
 }
 
 function hasCookie(cookieName) {
-    return assocArr[cookieName];
+  if (getCookie(cookieName) == "") return false;
+  return true;
 }
 
 let isDate = function (date) {
-    return (new Date(date) !== "Invalid Date") && !isNaN(new Date(date));
-}
-
+  return new Date(date) !== "Invalid Date" && !isNaN(new Date(date));
+};
 
 // let assocArr = new Map;
 
