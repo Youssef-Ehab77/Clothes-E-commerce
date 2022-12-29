@@ -1,5 +1,5 @@
 
-
+//* get path of json file by category  
 function getCategoryPath(category){
     var path 
     //* women category
@@ -19,6 +19,7 @@ function getCategoryPath(category){
 
 }
 
+//* load data into html file
 function loadData(category){
     var path = getCategoryPath(category)
     //* Get data from json file
@@ -38,7 +39,7 @@ function loadData(category){
                             `
                                 <div class="product_details">
                                     <div class="Overlay"></div>
-                                    <img src='${data[i].path}' />            
+                                    <img src='${data[i].path2}' />            
                                 </div>
                                 <button class="btn-carousel-view-details">
                                     <a href = './Product.html?id=${data[i].id}' > View Details </a>
@@ -57,7 +58,7 @@ function loadData(category){
     
 }  
 
-
+//* load women products automatically
 $(function(){
     loadData('women')
     
@@ -87,6 +88,21 @@ $(function(){
    
 })
     
+//* slider handler
+document.querySelectorAll('.view-products .carousel-inner').forEach(function(item){
+    var containerDimensions = item.getBoundingClientRect();
+    var containerWidth = containerDimensions.width;
+    
+    document.querySelector('.carousel-control-next').addEventListener('click', () => {
+        console.log(item.scrollLeft , containerWidth)
+        item.scrollLeft += containerWidth;
+        console.log(item.scrollLeft)
+    })
+
+    document.querySelector('.carousel-control-prev').addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
     
 
 
