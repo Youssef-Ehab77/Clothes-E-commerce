@@ -1,14 +1,12 @@
-var current = 0
-var start = 0
-var end = 7
-    document.querySelectorAll('.view-products .carousel-inner-item ').forEach(function(item){
+
+    document.querySelectorAll('.view-products .carousel-inner').forEach(function(item){
         var containerDimensions = item.getBoundingClientRect();
         var containerWidth = containerDimensions.width;
-        //console.log(item , containerDimensions )
         
         document.querySelector('.carousel-control-next').addEventListener('click', () => {
-            console.log("ss")
+            console.log(item.scrollLeft , containerWidth)
             item.scrollLeft += containerWidth;
+            console.log(item.scrollLeft)
         })
     
         document.querySelector('.carousel-control-prev').addEventListener('click', () => {
