@@ -33,17 +33,19 @@ function loadData(category){
                 var data = JSON.parse(xhr.response).sort((a, b) => 0.5 - Math.random());;
                 for(var i=0; i<8;i++){
                     //* append product items from json file into html file
-                    $('.carousel-inner-item').eq(i).append(
-                        `
-                            <div class="product_details">
-                                <div class="Overlay"></div>
-                                <img src='${data[i].path}' />            
-                            </div>
-                            <button class="btn-carousel-view-details">
-                                <a href = './Product.html?id=${data[i].id}' > View Details </a>
-                            </button>
-                        `
-                    )
+                    $('.carousel-inner-item').eq(i).animate(5000,function(){
+                        $('.carousel-inner-item').eq(i).append(
+                            `
+                                <div class="product_details">
+                                    <div class="Overlay"></div>
+                                    <img src='${data[i].path}' />            
+                                </div>
+                                <button class="btn-carousel-view-details">
+                                    <a href = './Product.html?id=${data[i].id}' > View Details </a>
+                                </button>
+                            `
+                        )
+                    })
                     
                 }
             }
@@ -64,15 +66,25 @@ $(function(){
 
 //* Toggle Taps
 $(function(){
-    for(var i=0 ; i<3 ; i++){
-        $('.products-header-wrapper').children(i).click(function(){
-            $(this).addClass('active')
-            if(j!==i){
-                $(this).siblings.removeClass('active')
-            }
+    var category = ''
+    $('.products-header-wrapper').children(0).children(1).click(function(){
+        category = $(this).eq(0).attr('id')
+        
+        $(this).get(0).classList.add('active')
+        //* delete active class from siblings [other taps]
+        $(this).parent().siblings().each(function(){
+            $(this).eq(0).children(0).get(0).classList.remove('active')
         })
-    }
 
+        
+        $(".carousel-inner-item").children().detach()
+        loadData(category)
+
+       
+
+    })
+   
+   
 })
     
     
