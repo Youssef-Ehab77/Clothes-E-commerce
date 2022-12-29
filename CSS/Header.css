@@ -45,7 +45,7 @@
     line-height: 30px
 }
 
-.header .view-more-items .btn-view-more{
+.header .header-content .view-more-items .btn-view-more{
     border: 0;
     padding: 8px 20px;
     background-color: var(--dark-Gray);
@@ -54,10 +54,11 @@
     border-radius: 5px;
     cursor: pointer!important;
     z-index: 1000;
+    cursor: pointer;
 }
 
-.header .view-more-items .btn-view-more:hover{
-    background-color: brown;
+.header .header-content .view-more-items .btn-view-more:hover{
+    background-color: brown!important;
 }
 
 
