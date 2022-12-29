@@ -68,8 +68,9 @@ xhr.onreadystatechange = function () {
     }
   }
 };
-xhr.send();
 
+xhr.send();
+//---
 //plus button
 document.getElementById("inc-quantity").onclick = function () {
   var textVal = document.getElementById("crnt-quantity").value;
@@ -93,5 +94,6 @@ document.getElementById("add-to-cart").onclick = function () {
     var prevQuantity = getCookie(productID);
     setCookie(productID, parseInt(quantity) + parseInt(prevQuantity));
   }
+  console.log("Cookies");
   console.log(allCookieList());
 };
