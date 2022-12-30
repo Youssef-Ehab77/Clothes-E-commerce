@@ -97,7 +97,7 @@ select:focus {
   outline: none;
 }
 .quantity-styling {
-  width: 35% !important;
+  width: 40% !important;
 
   padding: 0.5em 0.5em;
   border: 1px solid var(--border-color);
