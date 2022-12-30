@@ -156,7 +156,7 @@ xhr.onreadystatechange = function () {
       //* when the user Press View Cart then go to cart page
       document.getElementById("view-cart").onclick = function () {
         document.getElementById("container-pop-up").style.display = "none";
-        document.location.href = "/HTML/Cart.html";
+        document.location.href = "../HTML/Cart.html";
       };
     }
   }

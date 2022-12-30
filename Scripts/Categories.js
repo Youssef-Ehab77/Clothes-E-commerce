@@ -1,8 +1,8 @@
 let products = [];
-//console.log(window.location);
+let category = window.location.search.split('=')[1];
 //https://api.escuelajs.co/api/v1/products
 //../JSON/Products.json
-$.ajax("../Data/Men.json", {
+$.ajax("../Data/"+category+".json", {
     type: "GET",
     dataType: "json",
     success: function (productsData) {
@@ -29,8 +29,8 @@ setTimeout(function () {
     }
     $('.card').click(function () {
         let data = this.innerText.split('\n');
-        window.open('../HTML/Product.html?id=' + data[0]);
-         //window.location = '../HTML/Product.html?id=' + data[0];
+        // window.open('../HTML/Product.html?id=' + data[0]);
+         window.location = '../HTML/Product.html?id=' + data[0];
     });
 
     //.hover(function (){
@@ -55,7 +55,7 @@ var buyBtnArr = $(".buy-btn") ;
 
 var newArrivalProducts = [] ;
 
-$.ajax("../Data/Men.json", {
+$.ajax("../Data/"+category+".json", {
   type: "GET",
   dataType: "json",
   success: function (productsData) {
