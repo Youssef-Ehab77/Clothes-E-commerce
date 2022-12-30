@@ -1,0 +1,100 @@
+[
+    {
+        "id"        : "w-item1",
+        "name"      : "Sibu Cable Jumper, Olive",
+        "price"     : "£79.00", 
+        "desc"      : "Our comfortable jumper is constructed from a soft-to-touch wool-blend and features a regular ribbed crew-neck, a decorative cable-knit and ribbed edges.A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 56cm",
+        "material"  : "40% Wool, 30% Acrylic, 30% Polyamide.",
+        "path"      : "../Images/Products/Women/women-1.jpg",
+        "path2"     : "../Images/Products/Women/women-1_1.jpg",
+        "category"  : "women",
+        "sale"      : "50%" 
+    },
+    {
+        "id"        : "w-item2",
+        "name"      : "Yuna Raglan Jumper, Cloud",
+        "price"     : "£24.00", 
+        "desc"      : "Super soft cropped tee with short sleeves and a crew neck. A UK 6 - 8 can expect a relaxed fit whilst a UK 10 will wear more fitted..",
+        "size"      : "Length: 46cm, Across Width (Bust): 43cm",
+        "material"  : "70% Acrylic, 30% Polyester.",
+        "path"      : "../Images/Products/Women/women-2.jpg",
+        "path2"     : "../Images/Products/Women/women-2_1.jpg",
+        "sale"      : "20%" 
+
+    },
+    {
+        "id"        : "w-item3",
+        "name"      : "Cropped Rugby Tee, Ivory/Beige",
+        "price"     : "£55.00", 
+        "desc"      : "Boxy cut, cropped rugby shirt with a mandarin collar and hidden half button down fastening. With dropped shoulder sleeves, a UK size 6 - 8 can expect a slouchy silhouette whilst a UK size 12 will wear more fitted.",
+        "size"      : " Length: 50cm, Across Width (Bust): 61cm, Sleeve: 48cm.",
+        "material"  : "100% Cotton.",
+        "path"      : "../Images/Products/Women/women-3.jpg",
+        "path2"     : "../Images/Products/Women/women-3_1.jpg",
+        "sale"      : "30%" 
+
+    },
+    {
+        "id"        : "w-item4",
+        "name"      : "Dandelion Embroidered Tee, White",
+        "price"     : "£35.00", 
+        "desc"      : "Boxy fit cotton tee with a crew neck and embroidered dandelions all over. A UK size 6 - 8 can expect a slouchy fit whilst a UK size 12 will wear more fitted.",
+        "size"      : "Length: 66cm, Across Width (Bust): 52cm, Sleeve: 11cm.",
+        "material"  : "100% Cotton.",
+        "path"      : "../Images/Products/Women/women-4.jpg",
+        "path2"     : "../Images/Products/Women/women-4_1.jpg",
+        "sale"      : "10%" 
+
+    },
+    {
+        "id": "m-item1",
+        "name": "Menswear | Oversized Boxy Tee, Black",
+        "price": "£42.00",
+        "desc": " Half-sleeve lightweight t-shirt made from silky cotton. ",
+        "size": "Length: 64cm, Across Width (Chest): 67cm, Sleeve: 14cm",
+        "material": "100% Cotton.",
+        "path": "../../images/Men-1.jpg",
+        "path2": "../Images/Products/men/men-1_1.jpg",
+        "category": "men",
+        "sale"    : "20%" 
+
+    },
+    {
+        "id": "m-item2",
+        "name": "Menswear | Long Sleeve Boxy Tee, Caramel",
+        "price": "£46.00    ",
+        "desc": "A casual 100% cotton long sleeved tee characterised by its scoop neck and detailed stitching..",
+        "size": "Length: 67cm, Across Width (Chest): 65cm, Sleeve: 56cm",
+        "material": "100% Cotton.",
+        "path": "../Images/Products/Men/men-2.jpg",
+        "path2": "../Images/Products/Men/men-2_1.jpg",
+        "category": "men",
+        "sale"    : "8%" 
+
+    },
+    {
+        "id": "m-item3",
+        "name": "Menswear | Corduroy Shirt, Black",
+        "price": "£99.00",
+        "desc": "Heavyweight corduroy shirt with a flap pocket, faux pearl corozo buttons, a structured collar, and buttoned cuffs.",
+        "size": "Length: 80cm, Across Width (Chest): 67cm, Sleeve: 59cm..",
+        "material": "100% Polyester.",
+        "path": "../Images/Products/Men/men-3.jpg",
+        "path2": "../Images/Products/Men/men-3_1.jpg",
+        "sale" : "5%" 
+
+    },
+    {
+        "id": "m-item4",
+        "name": "Menswear | Faux Leather Blouson, Brown",
+        "price": "£124.00",
+        "desc": "Structured faux leather jacket complete with an open collar, side pockets, a central metal zipper, and popper buttoned cuffs.",
+        "size": "Length: 67cm, Across Width (Chest): 63cm, Sleeve: 48cm.",
+        "material": "100% Polyester.",
+        "path": "../Images/Products/Men/men-4.jpg",
+        "path2": "../Images/Products/Men/men-4_1.jpg",
+        "sale"      : "10%" 
+
+    }
+]

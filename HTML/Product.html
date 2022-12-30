@@ -1,0 +1,69 @@
+<html lang="en">
+  <head>
+    <title>Product</title>
+    <link rel="stylesheet" href="../CSS/HeaderAndFooter.css" />
+
+    <link rel="stylesheet" href="../CSS/Style.css" />
+    <link rel="stylesheet" href="../CSS/Scrollbar.css" />
+
+    <link rel="stylesheet" href="../CSS/product.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"/>
+  </head>
+  <body>
+    <!--* Start navbar Component -->
+    <div id="navbar-component"></div>
+    <!--* End navbar -->
+    <div class="free-shipping">
+      <p>FREE UK SHIPPING FOR ORDERS OF £95 OR MORE. FREE UK RETURNS.</p>
+    </div>
+
+    <div class="container-1">
+      <br />
+      <div class="path-product">
+        <h3><span id="category-name"></span> | <span id="pro-name"></span></h3>
+      </div>
+      <div class="product-data">
+        <!--it's content should be as row-->
+        <div class="product-img">
+          <img id="product-img" src="../images/Products/Women/women-1.jpg" />
+        </div>
+        <div class="product-desc">
+          <h1 id="product-name"></h1>
+          <hr />
+          <p id="product-price"></p>
+          <hr />
+          <h4>Size</h4>
+
+          <select>
+            <option>Select size</option>
+            <option>One size</option>
+          </select>
+          <h4>quantity</h4>
+          <div class="quantity-styling">
+            <button id="dec-quantity">-</button>
+            <input id="crnt-quantity" type="text" name="quantity" value="0" />
+            <button id="inc-quantity">+</button>
+          </div>
+          <input class="add-to-cart" type="button" value="ADD TO CART" />
+
+          <h4>Description</h4>
+          <p id="product-desc"></p>
+          <h4>Size Fit</h4>
+          <p id="product-fit"></p>
+          <h4>Material</h4>
+          <p id="product-material"></p>
+        </div>
+      </div>
+    </div>
+
+    <!--* Start footer Component -->
+    <div id="footer-component"></div>
+    <!--* End footer Component -->
+
+    <!-- *  Start Script -->
+    <script src="../Scripts/jquery.js"></script>
+    <script src="../Scripts/product.js"></script>
+    <script src="../Scripts/}Cookie.js"></script>
+    <!-- *  End Script -->
+  </body>
+</html>
