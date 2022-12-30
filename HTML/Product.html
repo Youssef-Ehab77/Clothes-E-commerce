@@ -16,20 +16,27 @@
     <!--* Start navbar Component -->
     <div id="navbar-component"></div>
     <!--* End navbar -->
+
     <div class="free-shipping">
       <p>FREE UK SHIPPING FOR ORDERS OF £95 OR MORE. FREE UK RETURNS.</p>
     </div>
 
+    <!--* Product Data Structure -->
+
     <div class="container-1">
       <br />
       <div class="path-product">
+        <!--* top Header (The path of product) -->
+
         <h3><span id="category-name"></span> | <span id="pro-name"></span></h3>
       </div>
       <div class="product-data">
-        <!--it's content should be as row-->
+        <!--* The Left Part-->
         <div class="product-img">
           <img id="product-img" src="../images/Products/Women/women-1.jpg" />
         </div>
+        <!--* The Right Part-->
+
         <div class="product-desc">
           <h1 id="product-name"></h1>
           <hr />
@@ -44,7 +51,7 @@
           <h4>quantity</h4>
           <div class="quantity-styling">
             <button id="dec-quantity">-</button>
-            <input id="crnt-quantity" type="text" name="quantity" value="0" />
+            <input id="crnt-quantity" type="text" name="quantity" value="1" />
             <button id="inc-quantity">+</button>
           </div>
           <input
@@ -64,8 +71,38 @@
       </div>
     </div>
 
+    <!-- *------------------------pop up div------------------------------------*-->
+
+    <div class="container-pop-up" id="container-pop-up">
+      <div class="pop-up-div">
+        <div class="selected-product-data">
+          <img src="" id="product-img-p" />
+          <div class="product-info">
+            <p id="product-name-p"></p>
+            <p id="product-price-p"></p>
+          </div>
+        </div>
+        <div class="selected-product-buttons">
+          <input
+            class="continue-shopping"
+            id="continue-shopping"
+            type="button"
+            value="Continue Shopping"
+          />
+          <input
+            class="view-cart"
+            id="view-cart"
+            type="button"
+            value="View Cart"
+          />
+        </div>
+      </div>
+    </div>
+
     <!--* Start footer Component -->
+
     <div id="footer-component"></div>
+
     <!--* End footer Component -->
 
     <!-- *  Start Script -->
