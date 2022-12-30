@@ -46,7 +46,7 @@
 .all-categories .men-category .image-container img,
 .all-categories .women-category .image-container img {
     height: 100%;
-    width: 400px;
+    width: 350px;
     cursor: pointer;
     box-shadow: 2px 5px 10px var(--light);
     border-radius: 20px;

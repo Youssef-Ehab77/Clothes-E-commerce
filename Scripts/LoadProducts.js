@@ -39,7 +39,8 @@ function loadData(category){
                             `
                                 <div class="product_details">
                                     <div class="Overlay"></div>
-                                    <img src='${data[i].path2}' />            
+                                    <img src='${data[i].path2}' />  
+                                    ${category=='sale' ? `<span class='sale-badge'> ${data[i].sale} </span>` : ''}          
                                 </div>
                                 <button class="btn-carousel-view-details">
                                     <a href = './Product.html?id=${data[i].id}' > View Details </a>
