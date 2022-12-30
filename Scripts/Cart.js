@@ -16,8 +16,7 @@ $(function() {
                 if (getCookie(item.id))
                 {
      
-                number_of_items += 1;
-                check_price += parseInt(item.price);
+                check_price += parseFloat(item.price.substring(1, item.price.length)) * parseInt(getCookie(item.id));
                 //console.log(item.price)
             
             //if item.name in cookies 
@@ -26,11 +25,11 @@ $(function() {
             "<div class='product'>" +
             "<div>" +
                 "<div class='product-image'><img src=" + item.path + "></div>" +
-                "<div class='product-detail'>Black Trouser</div>" +
+                "<div class='product-detail'>" + item.name + '</div>' +
             "</div>" +
             "<div class='quantity-blocks'>" +
                 "<button class='decrement' class='incdec'>-</button>" + //Cookies.get(item.id)
-                "<div class='count' class='product-detail'>" + getCookie(item.id) + "</div>" +  //item.quantity instead of 1
+                "<div class='count' class='product-detail'>" + parseFloat(getCookie(item.id)) + "</div>" +  //item.quantity instead of 1
                 "<button class='increment' class='incdec'>+</button>" +
             "</div>"  +
 
@@ -39,6 +38,7 @@ $(function() {
             "<hr class='horline'>" +
             "</div>" 
         )
+            number_of_items += parseInt(getCookie(item.id));
             }
         }
 
@@ -46,36 +46,41 @@ $(function() {
     
 
     setTimeout(function (){
+        $(".continue-shopping").click(function () {
+            window.location = '../HTML/Index.html';
+        })
         $("#footer").load('../HTML/Components/Footer.html');
-        $('#header').load('../HTML/Components/Header.html');
-        $('.total-price').text('Total Price: $' + check_price);
+        $('#header').load('../HTML/Components/Navbar.html');
+        $('.total-price').text('Total Price: £' + check_price);
         $('.number-items').text(number_of_items + ' items');
 
         $(".increment").click(function() {
             
         var countElement = $(this).closest('.product').find('.count');
+
+        
         
         var count = parseInt(countElement.text()) + 1;
 
         var global_count = parseInt($('.number-items').text()) + 1
         $('.number-items').text(global_count + ' items');
 
+
         var price = ($(this).closest('.product').find('.item-price').text());
 
 
-        var tmpTotal = count * parseInt(price);
-
+        var tmpTotal = count * parseFloat(price.substring(1, price.length));
 
         //update check price
-        check_price += parseInt(price);
+        check_price += parseFloat(price.substring(1, price.length));
 
         
         //update print
-        $('.total-price').text('Total Price: $' + check_price);
+        $('.total-price').text('Total Price: £' + check_price);
      
 
-
-        $(this).closest('.product').find('.item-total').text('$' + tmpTotal) 
+        
+        $(this).closest('.product').find('.item-total').text('£' + tmpTotal) 
 
         countElement.text(count);
 
@@ -96,16 +101,17 @@ $(function() {
                 var price = ($(this).closest('.product').find('.item-price').text());
 
                 if (count != 0)
-                    var tmpTotal = count * parseInt(price);
+                    var tmpTotal = count * parseFloat(price.substring(1, price.length));
                 else
                 {
                     $(this).closest('.product').remove();
                     $(this).closest('.horline').remove();
                 }
 
-                //update check price
 
-                check_price -= parseInt(price);
+                //update check price
+                check_price += parseFloat(price.substring(1, price.length));
+
              
                 //update print
                 $('.total-price').text('Total Price: $' + check_price);
@@ -116,7 +122,7 @@ $(function() {
             countElement.text(count);
 
 
-            if ($(".main").find('.product').length === 0)
+            if ($(".main").find('.product').length === 0) //if cart is empty
             {
                 $(".main").empty();
                 $(".main").append('<section class="empty-cart">' +
@@ -138,9 +144,22 @@ $(function() {
 }, 100)
 
 
+//regex material
+
+    usNamereg = /^[a-zA-Z]*$/;
+    phonereg = /^[0-9]{8}$/;
+    mobilereg = /^(01)(0|1|2|5)[0-9]{8}$/;
+    emailreg =  /(.+)@(.+){2,}\.(.+){2,}/;
+
+    if(usNamereg.test(usName) && phonereg.test(phone) && mobilereg.test(mobile) && emailreg.test(email))
+        document.write(("Welcome dear " + usName 
+        + "<br>"+ "Your phone number is " + phone
+        + "<br>"+ "Your mobile number is " + mobile
+        + "<br>"+ "Your Email Adress is " + email).fontcolor(color));
+
 $('.proceeder').on('click', (function(){
     $('.checkout').show();
-    $(".pay").text('Pay ' + check_price + '$');
+    $(".pay").text('Pay £' + check_price);
     $('.main').css('filter', 'blur(3px)');
 
 }
