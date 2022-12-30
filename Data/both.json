@@ -1,7 +1,7 @@
 [
     {
       "id": "m-item1",
-      "name": "Menswear | Oversized Boxy Tee, Black",
+      "name": "Oversized Boxy Tee",
       "price": "£42.00",
       "desc": " Half-sleeve lightweight t-shirt made from silky cotton. ",
       "size": "Length: 64cm, Across Width (Chest): 67cm, Sleeve: 14cm",
@@ -13,7 +13,7 @@
 
     {
         "id"        : "w-item1",
-        "name"      : "Sibu Cable Jumper, Olive",
+        "name"      : "Sibu Cable Jumper",
         "price"     : "£79.00", 
         "desc"      : "Our comfortable jumper is constructed from a soft-to-touch wool-blend and features a regular ribbed crew-neck, a decorative cable-knit and ribbed edges.A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 56cm",
@@ -25,7 +25,7 @@
 
     {
       "id": "m-item2",
-      "name": "Menswear | Long Sleeve Boxy Tee, Caramel",
+      "name": "Long Sleeve Boxy Tee",
       "price": "£46.00    ",
       "desc": "A casual 100% cotton long sleeved tee characterised by its scoop neck and detailed stitching..",
       "size": "Length: 67cm, Across Width (Chest): 65cm, Sleeve: 56cm",
@@ -37,7 +37,7 @@
 
     {
         "id"        : "w-item2",
-        "name"      : "Yuna Raglan Jumper, Cloud",
+        "name"      : "Yuna Raglan Jumper",
         "price"     : "£24.00", 
         "desc"      : "Super soft cropped tee with short sleeves and a crew neck. A UK 6 - 8 can expect a relaxed fit whilst a UK 10 will wear more fitted..",
         "size"      : "Length: 46cm, Across Width (Bust): 43cm",
@@ -48,7 +48,7 @@
 
     {
       "id": "m-item3",
-      "name": "Menswear | Corduroy Shirt, Black",
+      "name": "Corduroy Shirt",
       "price": "£99.00",
       "desc": "Heavyweight corduroy shirt with a flap pocket, faux pearl corozo buttons, a structured collar, and buttoned cuffs.",
       "size": "Length: 80cm, Across Width (Chest): 67cm, Sleeve: 59cm..",
@@ -59,7 +59,7 @@
 
     {
         "id"        : "w-item3",
-        "name"      : "Cropped Rugby Tee, Ivory/Beige",
+        "name"      : "Cropped Rugby Tee",
         "price"     : "£55.00", 
         "desc"      : "Boxy cut, cropped rugby shirt with a mandarin collar and hidden half button down fastening. With dropped shoulder sleeves, a UK size 6 - 8 can expect a slouchy silhouette whilst a UK size 12 will wear more fitted.",
         "size"      : " Length: 50cm, Across Width (Bust): 61cm, Sleeve: 48cm.",
@@ -71,7 +71,7 @@
 
     {
       "id": "m-item4",
-      "name": "Menswear | Faux Leather Blouson, Brown",
+      "name": "Faux Leather Blouson",
       "price": "£124.00",
       "desc": "Structured faux leather jacket complete with an open collar, side pockets, a central metal zipper, and popper buttoned cuffs.",
       "size": "Length: 67cm, Across Width (Chest): 63cm, Sleeve: 48cm.",
@@ -82,7 +82,7 @@
 
     {
         "id"        : "w-item4",
-        "name"      : "Dandelion Embroidered Tee, White",
+        "name"      : "Dandelion Embroidered Tee",
         "price"     : "£35.00", 
         "desc"      : "Boxy fit cotton tee with a crew neck and embroidered dandelions all over. A UK size 6 - 8 can expect a slouchy fit whilst a UK size 12 will wear more fitted.",
         "size"      : "Length: 66cm, Across Width (Bust): 52cm, Sleeve: 11cm.",
@@ -93,7 +93,7 @@
 
     {
       "id": "m-item5",
-      "name": "Menswear | Folded Sleeve Tee, Ivory",
+      "name": "Folded Sleeve Tee",
       "price": "£46.00",
       "desc": "T-shirt with ribbed crew neck, delicate stitching, and turned-up sleeves.",
       "size": "Length: 77cm, Across Width (Chest): 59cm, Sleeve: 21cm.",
@@ -104,7 +104,7 @@
 
     {
         "id"        : "w-item5",
-        "name"      : "Cable Mix Colour Contrast Cardigan, Navy",
+        "name"      : "Cable Mix Colour Contrast Cardigan",
         "price"     : "£79.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
@@ -115,7 +115,7 @@
 
     {
       "id": "m-item6",
-      "name": "Menswear | Viscose Shirt, Sage Grey",
+      "name": "Viscose Shirt",
       "price": "£89.00",
       "desc": "Our stylish lightweight shirt is complete with a relaxed open collar, central corozo buttons, and buttoned cuffs.",
       "size": " 72cm, Across Width (Chest): 60cm, Sleeve: 55cm.",
@@ -127,7 +127,7 @@
     
     {
         "id"        : "w-item6",
-        "name"      : "Hana Mini Crop Cardigan, Hibiscus",
+        "name"      : "Hana Mini Crop Cardigan",
         "price"     : "£69.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
@@ -138,7 +138,7 @@
 
     {
       "id": "m-item7",
-      "name": "Menswear | Wool Bomber Jacket, Black",
+      "name": "Wool Bomber Jacket",
       "price": "£159.00",
       "desc": "Our classic bomber is constructed from a heavyweight wool-blend fabric and is complete with ribbed neck, hem and cuffs, central two-way zipper, and deep side pockets.",
       "size": "Length: 62cm, Across Width (Chest): 65cm, Sleeve: 47cm.",
@@ -149,7 +149,7 @@
 
     {
         "id"        : "w-item7",
-        "name"      : "Flecked Roll Neck Crop Jumper, Brown",
+        "name"      : "Flecked Roll Neck Crop Jumper",
         "price"     : "£89.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
@@ -160,7 +160,7 @@
 
     {
       "id": "m-item8",
-      "name": "Menswear | Oversized Windowpane Shirt, Navy",
+      "name": "Oversized Windowpane Shirt",
       "price": "£69.00",
       "desc": "Oversized, casual checked overshirt constructed from a midweight cotton, complete with central corozo buttons, a structured collar, breast pocket, and buttoned cuffs.",
       "size": "Length: 81cm, Across Width (Chest): 71cm, Sleeve: 52cm.",
@@ -171,7 +171,7 @@
 
     {
         "id"        : "w-item8",
-        "name"      : "Dandelion Embroidered Tee, White",
+        "name"      : "Dandelion Embroidered Tee",
         "price"     : "£35.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
@@ -182,7 +182,7 @@
 
     {
       "id": "m-item9",
-      "name": "Menswear | Oversized Work Shirt, White ",
+      "name": "Oversized Work Shirt",
       "price": "£74.00",
       "desc": "A lightweight oversized shirt carefully crafted from 100% soft cotton. It is distinguished by its asymmetric patch pocket, white corozo buttons, and regular collar. ",
       "size": "Length: 86cm, Across Width (Chest): 64cm, Sleeve: 66cm.",
@@ -193,7 +193,7 @@
 
     {
         "id"        : "w-item9",
-        "name"      : "Daisy Embroidered Tee, Navy",
+        "name"      : "Daisy Embroidered Tee",
         "price"     : "£35.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
@@ -205,7 +205,7 @@
 
     {
       "id": "m-item10",
-      "name": "Menswear | Classic Jeans, Blue",
+      "name": "Classic Jeans",
       "price": "£49.00",
       "desc": "Our classic straight-leg jeans are constructed from heavyweight denim and are detailed with a matte black central button, metal zipper, traditional belt loops and deep front and back pockets.",
       "size": "Length: 111cm, Inside Leg: 81cm, Leg Opening: 22cm, Rise: 27cm, Thigh (Across Width): 30cm, Waist: 30",
@@ -217,7 +217,7 @@
     
     {
         "id"        : "w-item10",
-        "name"      : "Daisy Embroidered Tee, Navy",
+        "name"      : "Daisy Embroidered Tee",
         "price"     : "£89.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
@@ -228,7 +228,7 @@
 
     {
       "id": "m-item11",
-      "name": "Menswear | Carpenter Jeans, Blue",
+      "name": "Carpenter Jeans",
       "price": "£69.00",
       "desc": "Unique jeans constructed from a heavy-weight faded denim and feature two deep side pockets, traditional belt loops, metal zipper and abstract panels.",
       "size": "103cm, Inside Leg: 74cm, Leg Opening: 21cm, Waist: 32",
@@ -239,7 +239,7 @@
 
     {
         "id"        : "w-item11",
-        "name"      : "Seamless Round Collar Jacket, Navy",
+        "name"      : "Seamless Round Collar Jacket",
         "price"     : "£229.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : "Length: 57cm, Across Width (Bust): 61cm, Sleeve: 42cm.",
@@ -251,7 +251,7 @@
 
     {
       "id": "m-item12",
-      "name": "Menswear | Heiko Wool Herringbone Trousers, Forest",
+      "name": "Heiko Wool Herringbone Trousers",
       "price": "£79.00",
       "desc": "Half lined, cropped, single pleated herringbone woollen trousers with characterful welted flap back pocket.    ",
       "size": " Length: 101cm, Inseam: 74cm, Leg Opening: 20cm, Rise: 32cm, Thigh (Across Width): 32cm",
@@ -262,7 +262,7 @@
 
     {
         "id"        : "w-item12",
-        "name"      : "Mock Neck Padded Jacket, Green",
+        "name"      : "Mock Neck Padded Jacket",
         "price"     : "£99.00", 
         "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
         "size"      : " Length: 63cm, Across Width (Bust): 61cm, Sleeve: 49cm.",
