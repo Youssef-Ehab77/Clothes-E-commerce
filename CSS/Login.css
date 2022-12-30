@@ -1,0 +1,89 @@
+* {
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+
+.login-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: #FFFFFF;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    text-align: center;
+    margin: 0 20px;
+    border: 1px solid #4F5D75;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px gray;
+    min-width: 550px;
+    max-width: 600px;
+}
+
+.login-btn {
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px;
+    width: 90%;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #4F5D75;
+    color: #FFFFFF;
+    display: block;
+}
+
+.create-new-account-btn {
+    text-decoration: none;
+    font-size: 24px;
+    padding: 10px 35px;
+    margin: 30px;
+    border-radius: 5px;
+    background-color: #EF8354;
+    color: #FFFFFF;
+}
+
+.create-new-account-btn:hover {
+    opacity: 0.9;
+}
+
+.login-btn:hover {
+    opacity: 0.9;
+}
+
+.login-input-text {
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #d7d7d7;
+    border-radius: 5px;
+    min-width: 400px;
+    width: 90%;
+}
+
+.l-site-quote {
+    font-size: 25px;
+    margin-top: 10px;
+    color: #2D3142;
+}
+
+.logo-h1 {
+    font-size: 40px;
+    color: #EF8354;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+}

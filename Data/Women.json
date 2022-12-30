@@ -1,0 +1,131 @@
+[
+    {
+        "id"        : "w-item1",
+        "name"      : "Sibu Cable Jumper, Olive",
+        "price"     : "£79.00", 
+        "desc"      : "Our comfortable jumper is constructed from a soft-to-touch wool-blend and features a regular ribbed crew-neck, a decorative cable-knit and ribbed edges.A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 56cm",
+        "material"  : "40% Wool, 30% Acrylic, 30% Polyamide.",
+        "path2"      : "../Images/Products/Women/women-1.jpg",
+        "path"     : "../Images/Products/Women/women-1_1.jpg",
+        "category"  : "women"
+    },
+    {
+        "id"        : "w-item2",
+        "name"      : "Yuna Raglan Jumper, Cloud",
+        "price"     : "£24.00", 
+        "desc"      : "Super soft cropped tee with short sleeves and a crew neck. A UK 6 - 8 can expect a relaxed fit whilst a UK 10 will wear more fitted..",
+        "size"      : "Length: 46cm, Across Width (Bust): 43cm",
+        "material"  : "70% Acrylic, 30% Polyester.",
+        "path2"      : "../Images/Products/Women/women-2.jpg",
+        "path"     : "../Images/Products/Women/women-2_1.jpg"
+    },
+    {
+        "id"        : "w-item3",
+        "name"      : "Cropped Rugby Tee, Ivory/Beige",
+        "price"     : "£55.00", 
+        "desc"      : "Boxy cut, cropped rugby shirt with a mandarin collar and hidden half button down fastening. With dropped shoulder sleeves, a UK size 6 - 8 can expect a slouchy silhouette whilst a UK size 12 will wear more fitted.",
+        "size"      : " Length: 50cm, Across Width (Bust): 61cm, Sleeve: 48cm.",
+        "material"  : "100% Cotton.",
+        "path2"      : "../Images/Products/Women/women-3.jpg",
+        "path"     : "../Images/Products/Women/women-3_1.jpg"
+    },
+    {
+        "id"        : "w-item4",
+        "name"      : "Dandelion Embroidered Tee, White",
+        "price"     : "£35.00", 
+        "desc"      : "Boxy fit cotton tee with a crew neck and embroidered dandelions all over. A UK size 6 - 8 can expect a slouchy fit whilst a UK size 12 will wear more fitted.",
+        "size"      : "Length: 66cm, Across Width (Bust): 52cm, Sleeve: 11cm.",
+        "material"  : "100% Cotton.",
+        "path2"      : "../Images/Products/Women/women-4.jpg",
+        "path"     : "../Images/Products/Women/women-4_1.jpg"
+    },
+    {
+        "id"        : "w-item5",
+        "name"      : "Cable Mix Colour Contrast Cardigan, Navy",
+        "price"     : "£79.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
+        "material"  : "80% Wool, 20% Polyamide.",
+        "path2"      : "../Images/Products/Women/women-5.jpg",
+        "path"     : "../Images/Products/Women/women-5_1.jpg"
+    },
+    {
+        "id"        : "w-item6",
+        "name"      : "Hana Mini Crop Cardigan, Hibiscus",
+        "price"     : "£69.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
+        "material"  : "60% Polyester, 38% Acrylic, 2% Elastane.",
+        "path2"      : "../Images/Products/Women/women-6.jpg",
+        "path"     : "../Images/Products/Women/women-6_1.jpg"
+    },
+    {
+        "id"        : "w-item7",
+        "name"      : "Flecked Roll Neck Crop Jumper, Brown",
+        "price"     : "£89.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
+        "material"  : "60% Wool, 20% Polyamide, 20% Viscose.",
+        "path2"      : "../Images/Products/Women/women-7.jpg",
+        "path"     : "../Images/Products/Women/women-7_1.jpg"
+    }
+    ,
+    {
+        "id"        : "w-item8",
+        "name"      : "Dandelion Embroidered Tee, White",
+        "price"     : "£35.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
+        "material"  : "100% Cotton.",
+        "path2"      : "../Images/Products/Women/women-8.jpg",
+        "path"     : "../Images/Products/Women/women-8_1.jpg"
+    },
+    {
+        "id"        : "w-item9",
+        "name"      : "Daisy Embroidered Tee, Navy",
+        "price"     : "£35.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
+        "material"  : "100% Cotton.",
+        "path2"      : "../Images/Products/Women/women-9.jpg",
+        "path"     : "../Images/Products/Women/women-9_1.jpg"
+    },
+    {
+        "id"        : "w-item10",
+        "name"      : "Daisy Embroidered Tee, Navy",
+        "price"     : "£89.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 52cm, Across Width (Bust): 55cm, Sleeve: 42cm.",
+        "material"  : "60% Wool, 20% Polyamide, 20% Acrylic.",
+        "path2"      : "../Images/Products/Women/women-10.jpg",
+        "path"     : "../Images/Products/Women/women-10_1.jpg"
+    },
+    {
+        "id"        : "w-item11",
+        "name"      : "Seamless Round Collar Jacket, Navy",
+        "price"     : "£229.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : "Length: 57cm, Across Width (Bust): 61cm, Sleeve: 42cm.",
+        "material"  : "90% Wool, 10% Polyamide.",
+        "path2"      : "../Images/Products/Women/women-11.jpg",
+        "path"     : "../Images/Products/Women/women-11_1.jpg"
+    },
+    {
+        "id"        : "w-item12",
+        "name"      : "Mock Neck Padded Jacket, Green",
+        "price"     : "£99.00", 
+        "desc"      : "Our lightweight cableknit cardigan is constructed from a luxurious wool-blend and is detailed with a decorative plaited knit, traditional crew-neck, central corozo buttons and ribbed edges. A UK 6-8 can expect a relaxed fit, where as a UK 12 will wear more fitted.",
+        "size"      : " Length: 63cm, Across Width (Bust): 61cm, Sleeve: 49cm.",
+        "material"  : "100% Polyester.",
+        "path2"      : "../Images/Products/Women/women-12.jpg",
+        "path"     : "../Images/Products/Women/women-12_1.jpg"
+    }
+    
+    
+    
+    
+    
+   
+   
+]

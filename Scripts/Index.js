@@ -15,11 +15,18 @@ $(function() {
             'height':'auto',
             'background': 'none'
         })
+        //* Load navbar Component
+        $("#navbar-component").load("../HTML/Components/Navbar.html");
         //* Load Header Component
         $("#header-component").load("../HTML/Components/Header.html");
+        //* footer-component
+        $("#all-categories-component").load("../HTML/Components/AllCategories.html");
         //* Load Product Component
         $("#product-component").load("../HTML/Components/ViewProducts.html");
-    },1000)
+        //* footer-component
+        $("#footer-component").load("../HTML/Components/Footer.html");
+        
+    },2000)
     
 });
 
