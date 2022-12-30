@@ -66,6 +66,15 @@
   /* position: static; */
   display: block;
 }
+
+.product_details .sale-badge{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--Chocolate);
+  padding: 5px 10px;
+  color: white;
+}
 .btn-carousel-view-details {
   position: relative;
   margin: auto;
@@ -133,5 +142,6 @@
 .view-products .carousel-control-next {
   right: -30px;
 }
+
 
 /* * end styling of  carousel */
