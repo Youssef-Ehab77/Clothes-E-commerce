@@ -4,7 +4,7 @@ $(function() {
 
     var check_price = 0; //total check price, add every price
 
-    $.ajax("../json/Products.json", {
+    $.ajax("../Data/both.json", {
         type:"GET",
         dataType:'json',
         contentType: 'application/json',
@@ -13,6 +13,9 @@ $(function() {
 
             for (item of dataObj)
             {
+                if (getCookie(item.id))
+                {
+     
                 number_of_items += 1;
                 check_price += parseInt(item.price);
                 //console.log(item.price)
@@ -22,28 +25,29 @@ $(function() {
                 
             "<div class='product'>" +
             "<div>" +
-                "<div class='product-image'><img src=" + item.src + "></div>" +
+                "<div class='product-image'><img src=" + item.path + "></div>" +
                 "<div class='product-detail'>Black Trouser</div>" +
             "</div>" +
             "<div class='quantity-blocks'>" +
-                "<button class='decrement' class='incdec'>-</button>" +
-                "<div class='count' class='product-detail'>1</div>" +  //item.quantity instead of 1
+                "<button class='decrement' class='incdec'>-</button>" + //Cookies.get(item.id)
+                "<div class='count' class='product-detail'>" + getCookie(item.id) + "</div>" +  //item.quantity instead of 1
                 "<button class='increment' class='incdec'>+</button>" +
             "</div>"  +
 
-            "<div class='item-price' class='product-detail'>" +item.price + "</div>" +
-            "<div class='item-total' class='product-detail'>" + item.price + "</div>" +
+            "<div class='item-price' class='product-detail'>" + item.price + "</div>" +
+            "<div class='item-total' class='product-detail'> £" + parseFloat(item.price.substring(1, item.price.length)) * parseInt(getCookie(item.id)) + "</div>" +
             "<hr class='horline'>" +
             "</div>" 
         )
             }
+        }
 
 
     
 
     setTimeout(function (){
-        $("#footer").load('../HTML/Footer.html');
-        $('#header').load('../HTML/Header.html');
+        $("#footer").load('../HTML/Components/Footer.html');
+        $('#header').load('../HTML/Components/Header.html');
         $('.total-price').text('Total Price: $' + check_price);
         $('.number-items').text(number_of_items + ' items');
 
@@ -128,7 +132,7 @@ $(function() {
             }
 
             $(".continue-shopping").click(function () {
-                window.location = '../HTML/Categories.html'; //home page
+                window.location = '../HTML/Index.html';
             })
         });
 }, 100)
@@ -137,6 +141,8 @@ $(function() {
 $('.proceeder').on('click', (function(){
     $('.checkout').show();
     $(".pay").text('Pay ' + check_price + '$');
+    $('.main').css('filter', 'blur(3px)');
+
 }
 ))
 
@@ -146,6 +152,7 @@ $(document).mouseup(function(p)
     var checkout = $('.checkout');
     if (!checkout.is(p.target) && !checkout.has(p.target).length) {
       checkout.hide();
+      $('.main').css('filter', 'blur(0px)');
     }
   });
 
