@@ -1,27 +1,5 @@
 [
   {
-    "id": "m-item1",
-    "name": "Menswear | Oversized Boxy Tee, Black",
-    "price": "£42.00",
-    "desc": " Half-sleeve lightweight t-shirt made from silky cotton. ",
-    "size": "Length: 64cm, Across Width (Chest): 67cm, Sleeve: 14cm",
-    "material": "100% Cotton.",
-    "path": "../Images/Products/men/Men-1.jpg",
-    "path2": "../Images/Products/men/men-1_1.jpg",
-    "category": "men"
-  },
-  {
-    "id": "m-item2",
-    "name": "Menswear | Long Sleeve Boxy Tee, Caramel",
-    "price": "£46.00    ",
-    "desc": "A casual 100% cotton long sleeved tee characterised by its scoop neck and detailed stitching..",
-    "size": "Length: 67cm, Across Width (Chest): 65cm, Sleeve: 56cm",
-    "material": "100% Cotton.",
-    "path": "../Images/Products/Men/men-2.jpg",
-    "path2": "../Images/Products/Men/men-2_1.jpg",
-    "category": "men"
-  },
-  {
     "id": "m-item3",
     "name": "Menswear | Corduroy Shirt, Black",
     "price": "£99.00",
@@ -120,5 +98,27 @@
     "material": "50% Polyester, 50% Wool.",
     "path": "../Images/Products/Men/men-12.jpg",
     "path2": "../Images/Products/Men/men-12_1.jpg"
+  },
+  {
+    "id": "m-item1",
+    "name": "Menswear | Oversized Boxy Tee, Black",
+    "price": "£42.00",
+    "desc": " Half-sleeve lightweight t-shirt made from silky cotton. ",
+    "size": "Length: 64cm, Across Width (Chest): 67cm, Sleeve: 14cm",
+    "material": "100% Cotton.",
+    "path": "../Images/Products/men/Men-1.jpg",
+    "path2": "../Images/Products/men/men-1_1.jpg",
+    "category": "men"
+  },
+  {
+    "id": "m-item2",
+    "name": "Menswear | Long Sleeve Boxy Tee, Caramel",
+    "price": "£46.00    ",
+    "desc": "A casual 100% cotton long sleeved tee characterised by its scoop neck and detailed stitching..",
+    "size": "Length: 67cm, Across Width (Chest): 65cm, Sleeve: 56cm",
+    "material": "100% Cotton.",
+    "path": "../Images/Products/Men/men-2.jpg",
+    "path2": "../Images/Products/Men/men-2_1.jpg",
+    "category": "men"
   }
 ]
