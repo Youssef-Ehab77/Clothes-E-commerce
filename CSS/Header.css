@@ -44,20 +44,28 @@
     line-height: 30px
 }
 
-.header .header-content .view-more-items .btn-view-more{
+.header .header-content .view-more-items{
     border: 0;
     padding: 8px 20px;
+    /* width: 100px;
+    height: 50px; */
     background-color: var(--dark-Gray);
-    color: white;
     box-shadow: 4px 5px 10px var(--CadetBlue);
     border-radius: 5px;
     cursor: pointer!important;
     z-index: 1000;
-    cursor: pointer;
+}
+.header .header-content .view-more-items #btn-view-more{
+    background: none;
+    width: 100%;
+    border: 0;
+    color: white;
+    cursor: pointer!important;
+
 }
 
-.header .header-content .view-more-items .btn-view-more:hover{
-    background-color: brown!important;
+.header .header-content .view-more-items:hover{
+    background-color: var(--Chocolate)!important;
 }
 
 
