@@ -3,9 +3,9 @@ $(function(){
     setTimeout(function(){
         console.log($('#btn-view-more'))
         $('#btn-view-more').click(function(){
-            // $('.btn-view-more')
+            window.scrollTo(0 , $('#product-component').offset().top)
         })
         
-    },2000)
+    },200)
     
 })
