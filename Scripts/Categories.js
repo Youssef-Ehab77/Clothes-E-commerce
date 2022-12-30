@@ -55,7 +55,7 @@ var buyBtnArr = $(".buy-btn") ;
 
 var newArrivalProducts = [] ;
 
-$.ajax("../JSON/Products.json", {
+$.ajax("../Data/Men.json", {
   type: "GET",
   dataType: "json",
   success: function (productsData) {
@@ -68,25 +68,27 @@ $.ajax("../JSON/Products.json", {
 setTimeout(function () {
   for (let i=1 ; i<9 ; i++) {
       $('.slider').append(
-        "<div class=\"left\"><img id=\"left\" src=\"../Images/Products/left-arrow.png\" alt=\"\"></div>"+
-        "<div class=\"BOX box"+[i]+"\">"+
+        // "<div class=\"left\"><img id=\"left\" src=\"../Images/Products/left-arrow.png\" alt=\"\"></div>"+
+        
+        "<div class=\"BOX box"+i+"\">"+
             "<div class=\"slide-img\">"+
-                "<img src=\" "+newArrivalProducts[i].src+" \" alt=\"Loading\" >"+
+                "<img src=\" "+newArrivalProducts[i-1].path+" \" alt=\"Loading\" >"+
            "<div class=\"overlay\">"+
-                "<a href=\"#\" class=\"buy-btn\">Buy now</a>"+
+                "<a href=\"#\" class=\"buy-btn\">"+"<div style='width: 0;height: 0; font-size: 0'>"+newArrivalProducts[i-1].id+"</div>"+ "Buy now</a>"+
             "</div>"+
             "</div>"+
             "<div class=\"detail-box\">"+
                 "<div class=\"type\">"+
-                    "<a href=\"#\">"+newArrivalProducts[i].name+"</a>"+
-                    "<span>new arrival</span>"+
+                    "<a href=\"#\">"+newArrivalProducts[i-1].name+"</a>"+
+                    // "<span>new arrival</span>"+
                 "</div>"+
-                "<a href=\"#\" class=\"price\">\""+newArrivalProducts[i].price+"\"</a>"+
+                // "<a href=\"#\" class=\"price\">\""+newArrivalProducts[i-1].price+"\"</a>"+
             "</div>"+
-        "</div>"+
-       "<div class=\"right\"><img id=\"right\" src=\"../Images/Products/right-arrow.png\" alt=\"\"></div>"
+        "</div>"
+      //   +
+      //  "<div class=\"right\"><img id=\"right\" src=\"../Images/Products/right-arrow.png\" alt=\"\"></div>"
       )
-
+    }
 
       // name of product
       // document.querySelectorAll(".BOX")[i].innerText.split("\n")[0]
@@ -94,12 +96,13 @@ setTimeout(function () {
       // document.querySelectorAll(".BOX")[i].innerText.split('"')[1].split(" ")[0]
 
       $('.buy-btn').click(function () {
-        var productName = document.querySelectorAll(".BOX")[i].innerText.split("\n")[0]
-        var productPrice = document.querySelectorAll(".BOX")[i].innerText.split('"')[1].split(" ")[0]
-        window.location = '../HTML/Cart.html?product='+productName+'&price='+productPrice;
+        // var productName = document.querySelectorAll(".BOX")[i].innerText.split("\n")[0]
+        // var productPrice = document.querySelectorAll(".BOX")[i].innerText.split('"')[1].split(" ")[0]
+        let text = this.innerText.split('\n');
+        window.location = '../HTML/Product.html?id='+text[0];
     });
 
-  }
+  
 }, 300);
 
 ////////////carousel JS/////////////////////////////
