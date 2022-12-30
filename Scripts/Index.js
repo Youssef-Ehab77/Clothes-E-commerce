@@ -19,6 +19,8 @@ $(function() {
         $("#navbar-component").load("../HTML/Components/Navbar.html");
         //* Load Header Component
         $("#header-component").load("../HTML/Components/Header.html");
+        //* footer-component
+        $("#all-categories-component").load("../HTML/Components/AllCategories.html");
         //* Load Product Component
         $("#product-component").load("../HTML/Components/ViewProducts.html");
         //* footer-component
