@@ -71,7 +71,7 @@ body{height: auto;}
 /* * start contact from */
 
 .cotact-form{
-    background-color: #ffffff;
+    background-color:  #f3f3f3;
 	box-shadow: 4px 4px 10px var(--dark-Gray);
     width: 50%;
     height: auto;
@@ -148,8 +148,8 @@ body{height: auto;}
 .successful-msg{
     background-color: #77d474;
     color: var(--dark-Gray);
-    width: 350px;
-    padding: 10px;
+    width: 380px;
+    padding: 0px 5px;
     position: absolute;
     text-align: center;
     display: none;
