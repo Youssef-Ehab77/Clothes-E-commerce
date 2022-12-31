@@ -63,7 +63,7 @@ $(function() {
 
 
         $(".continue-shopping").click(function () {
-            window.location = '../Index.html';
+            window.location = '../index.html';
         })
         $("#footer").load('../HTML/Components/Footer.html');
         $('#header').load('../HTML/Components/Navbar.html');
@@ -200,7 +200,7 @@ $(function() {
             }
 
             $(".continue-shopping").click(function () {
-                window.location = '../Index.html';
+                window.location = '../index.html';
             })
         });
 }, 100)
@@ -295,12 +295,12 @@ $(".pay").click(function(){
     {
         var checkout = $('.checkout');
         if (!checkout.is(p.target) && !checkout.has(p.target).length) {
-            window.location = '../Index.html';
+            window.location = '../index.html';
         }
 
         $(".pay-shopping-btn").click(function () {
             //event.preventDefault();
-            window.location = '../Index.html';
+            window.location = '../index.html';
         })
     });
 

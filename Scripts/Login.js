@@ -22,7 +22,7 @@ $(function () {
         let password = $('#l-password').get(0).value;
 
         if (username.length >= 4 && password.length >= 4 && getCookie('username') === username && getCookie('password') === password) {
-                document.location.href = '../Index.html';
+                document.location.href = '../index.html';
         } else {
             // alert('Wrong Username or Password!');
             swal("Wrong Username or Password!"); 
