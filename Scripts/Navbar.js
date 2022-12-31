@@ -5,7 +5,17 @@ $(function(){
     })
 })
 
-
+// "/HTML/ContactUs.html"
+$(function(){
+    setTimeout(function(){
+        var pageName = location.pathname.substring(6,(location.pathname.length-5))
+        if(pageName){
+            $('#' + pageName).eq(0).addClass('active')
+            $('#' + pageName).eq(0).siblings().removeClass('active')
+        }
+    })
+    
+})
 
 //* check if user login or not
 $(function(){

@@ -1,7 +1,7 @@
 
 html {
 	--scrollbarBG: none;
-	--thumbBG: var(--CadetBlue);
+	--thumbBG: var(--dark-Gray);
 	background-color: var(--dark-color);
 }
 .scrollbar::-webkit-scrollbar,
