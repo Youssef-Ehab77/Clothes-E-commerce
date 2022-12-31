@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+    /* background-image: url("../Images/games/background2.webp"); */
+    /* background-position: center;
+    background-size: cover; */
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #2d3142, #414a58, #59656f, #748085, #939b9d, #94a7a8,
+    #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center ;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: white;
+    font-size: 50px;
+}
+.child{
+    display: flex;
+    flex-direction: row;
+    column-gap: 100px;
+    justify-content: center;
+}
+.grandChild1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    box-shadow: 2px 2px 2px rgb(206, 198, 198);
+    border-radius: 30%;
+    background-color: white;
+    cursor: pointer;
+}
+.grandChild2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    box-shadow: 2px 2px 2px rgb(206, 198, 198);
+    border-radius: 30%;
+    background-color: white;
+    cursor: pointer;
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 30%;
+    
+}
+span{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: calibri;
+    font-weight: 700;
+    font-size: 20px;
+}
+.grandChild1:hover{
+
+    scale: 1.2;
+
+}
+.grandChild2:hover{
+
+    scale: 1.2;
+
+}

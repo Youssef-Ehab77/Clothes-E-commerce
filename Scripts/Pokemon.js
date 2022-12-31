@@ -74,7 +74,7 @@ function update() {
                     setCookie('discount', (discountValue + 2), date);
                 }
             } else {
-                $(".you-won").css("display", 'block')
+                $(".you-won").css("display", 'block');
                 $(".result").html("You won 2% discount");
                 setCookie('discount', 2, date);
                 setCookie('pokemon', '1', date);
