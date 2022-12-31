@@ -1,0 +1,16 @@
+.body {
+  height: auto;
+}
+.about-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+}
+.left-side {
+  width: 50%;
+  border: 1px solid black;
+}
+.right-side {
+  width: 50%;
+  border: 1px solid black;
+}
