@@ -1,0 +1,104 @@
+body {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-image: linear-gradient(to right bottom, #2d3142, #414a58, #59656f, #748085, #939b9d, #94a7a8, #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);}
+
+hr {
+    width: 600px;
+}
+
+h1, h2 {
+    color: #FFFFFF;
+}
+
+#board {
+    width: 500px;
+    height: 500px;
+    background-color: #cdcece;
+    /*border-radius: 15px;*/
+    border: 7px solid #2D3142;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    box-sizing: border-box;
+    height: 25%;
+    width: 25%;
+    border: solid #2D3142 5px;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.n2 {
+    background-color: #f8ad8d;
+    color: #FFFFFF;
+}
+
+.n4 {
+    background-color: #f68a5b;
+    color: #FFFFFF;
+}
+
+.n8 {
+    background-color: #f6682b;
+    color: #FFFFFF;
+}
+
+.n16 {
+    background-color: #ff4f00;
+    color: #FFFFFF;
+}
+
+.n32 {
+    background-color: #fb3535;
+    color: #FFFFFF;
+}
+
+.n64 {
+    background-color: #ff0202;
+    color: #FFFFFF;
+}
+
+.n128 {
+    background-color: #27fdf7;
+    color: #FFFFFF;
+}
+
+.n256 {
+    background-color: #27cdf3;
+    color: #FFFFFF;
+}
+
+.n512 {
+    background-color: #1e64fa;
+    color: #FFFFFF;
+}
+
+.n1024 {
+    background-color: #0061a7;
+    color: #FFFFFF;
+}
+
+
+.n2048 {
+    background-color: #000000;
+    color: #ffffff;
+}
