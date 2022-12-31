@@ -2,7 +2,9 @@
 * {
     font-family: Roboto, sans-serif;
 }
-
+:root{
+    --dark-Gray : #303142;
+}
 body{
     margin: 0;
 }

@@ -52,7 +52,7 @@ body{height: auto;}
     font-size: 15px;
     font-weight: 400;
     margin: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     display: inline-block;
 }
 
@@ -65,7 +65,7 @@ body{height: auto;}
 
 }
 .contact-details .mb-2{
-    margin-bottom: 30px!important;
+    margin-bottom: 20px!important;
 }
 
 /* * start contact from */
@@ -117,7 +117,7 @@ body{height: auto;}
 
 .cotact-form .container .form-group input::placeholder,
 .cotact-form .container .form-group textarea::placeholder{
-    color: var(--light);
+    color: var(--dark-Gray);
     
 }
 .cotact-form .container .form-group input:focus,
