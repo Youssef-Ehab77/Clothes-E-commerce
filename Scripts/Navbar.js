@@ -1,7 +1,7 @@
 //* when click on logo => go back to home page
 $(function(){
     $('#logo').click(function(){
-        history.back('./')
+        location.href = './Index.html'
     })
 })
 
