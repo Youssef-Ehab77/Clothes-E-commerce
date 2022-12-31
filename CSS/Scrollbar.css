@@ -2,7 +2,6 @@
 html {
 	--scrollbarBG: none;
 	--thumbBG: var(--dark-Gray);
-	background-color: var(--dark-color);
 }
 .scrollbar::-webkit-scrollbar,
 body::-webkit-scrollbar {
@@ -11,7 +10,7 @@ body::-webkit-scrollbar {
 body,
 .scrollbar {
 	scrollbar-width: thin;
-	scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+	scrollbar-color: var(--thumbBG) var(--scrollbarBG)!important;
 }
 body::-webkit-scrollbar-track,
 .scrollbar::-webkit-scrollbar-track {
