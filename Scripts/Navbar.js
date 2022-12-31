@@ -12,8 +12,8 @@ $(function () {
     var length = pageName.length - 1;
     pageName[length] = pageName[length].slice(0, -5);
     // console.log(pageName[length]);
-    $('#' + pageName[length]).eq(0).addClass('active')
-    $('#' + pageName).eq(0).siblings().removeClass('active')
+    $('#' + pageName[length]).eq(0).addClass('active').siblings().removeClass('active');
+    //$('#' + pageName[length]).eq(0)
 
 });
 
