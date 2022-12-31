@@ -237,12 +237,12 @@ function makeDiscount() {
 function calcDiscount() {
     var currentDiscount = parseInt(getCookie('discount'));
     if (currentDiscount < 10) {
-        if (score > 10000) {
+        if (score > 2048) {
+            setCookie('discount', (currentDiscount + 8));
+        } else if (score > 1024) {
             setCookie('discount', (currentDiscount + 5));
-        } else if (score > 5000) {
+        } else if (score > 512) {
             setCookie('discount', (currentDiscount + 3));
-        } else if (score > 2048) {
-            setCookie('discount', (currentDiscount + 2));
         } else {
             setCookie('discount', (currentDiscount + 1));
         }
