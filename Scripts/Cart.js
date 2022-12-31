@@ -11,6 +11,7 @@ $(function() {
         success: function(dataObj)
         {
 
+
             for (item of dataObj)
             {
                 if (hasCookie(item.id))
@@ -42,13 +43,31 @@ $(function() {
             }
         }
 
+        ///////if cart is empty
+        if ($(".main").find('.product').length === 0)
+        {
+            $(".main").empty();
+            $(".main").append('<section class="empty-cart">' +
+            '<div class="empty-text">"Your Cart is Empty!"</div>' +
+            '<button type="button" class="continue-shopping">← Continue Shopping</button>' +
+        '</section>')
+
+        $(".main").width('250px');
+        $(".main").css('margin', 'auto');
+        $(".main").css('margin-top', '200px');
+        $(".main").css('margin-bottom', '200px');
+        $(".empty-text").css('white-space', 'nowrap');
+        }
 
     setTimeout(function (){
+
+
         $(".continue-shopping").click(function () {
             window.location = '../HTML/Index.html';
         })
         $("#footer").load('../HTML/Components/Footer.html');
         $('#header').load('../HTML/Components/Navbar.html');
+
         
         if (getCookie('discount'))
         {
