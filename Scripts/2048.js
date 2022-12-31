@@ -79,7 +79,6 @@ function checkEnd() {
 function generate2() {
     if (!hasEmptyTile()) {
         if (checkEnd()) {
-            swal("The Board Is Filled!\nGame Over");
             makeDiscount();
         }
         return;
@@ -227,6 +226,7 @@ function makeDiscount() {
         }
         calcDiscount();
     }
+    swal("The Board Is Filled!\nGame Over\nYou Have total "+getCookie('discount')+"% discount");
 }
 
 function calcDiscount() {
@@ -242,4 +242,5 @@ function calcDiscount() {
             setCookie('discount', (currentDiscount + 1));
         }
     }
+
 }
