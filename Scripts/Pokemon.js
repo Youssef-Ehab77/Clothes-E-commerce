@@ -66,20 +66,25 @@ function update() {
             if (getCookie('pokemon') === '1') {
                 $(".you-won").css("display", 'block')
                 $(".result").html("No more discounts, but you still can have fun!");
-            } else if (getCookie('discount')) {
-                $(".you-won").css("display", 'block');
-                if (parseInt(getCookie('discount')) < 10) {
-                    let currentDiscount = parseInt(getCookie('discount'));
-                    $(".result").html("You won 2% discount\nCurrent total discount is " + (currentDiscount + 2) + "%");
-                    setCookie('discount', (currentDiscount + 2), date);
-                }
             } else {
-                $(".you-won").css("display", 'block');
-                $(".result").html("You won 2% discount");
-                setCookie('discount', 2, date);
                 setCookie('pokemon', '1', date);
+
+                if (getCookie('discount')) {
+                    $(".you-won").css("display", 'block');
+                    if (parseInt(getCookie('discount')) < 10) {
+                        let currentDiscount = parseInt(getCookie('discount'));
+                        $(".result").html("You won 2% discount\nCurrent total discount is " + (currentDiscount + 2) + "%");
+                        setCookie('discount', (currentDiscount + 2), date);
+                    }
+                }else{
+                    $(".you-won").css("display", 'block');
+                    $(".result").html("You won 2% discount");
+                    setCookie('discount', 2, date);
+                }
             }
         }
+
+
         return;
     }
     playerPosition.x += playerVelocity.x;  // left = -1 (not moving) = 0 right = 1
