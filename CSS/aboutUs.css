@@ -1,16 +1,18 @@
+
 .body {
-  height: auto;
+  height: auto!important;
+
 }
 .about-container {
   border: 1px solid black;
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
 }
 .left-side {
   width: 50%;
   border: 1px solid black;
 }
 .right-side {
-  width: 50%;
+  width: 40%;
   border: 1px solid black;
 }
