@@ -1,32 +1,14 @@
-let board;
-let score = 0;
-const rows = 4;
-const columns = 4;
-
-document.addEventListener('keyup', function (e) {
-    if (e.code === 'ArrowLeft') {
-        slideLeft();
-        generate2();
-    } else if (e.code === 'ArrowRight') {
-        slideRight();
-        generate2();
-    } else if (e.code === 'ArrowUp') {
-        slideUp();
-        generate2();
-    } else if (e.code === 'ArrowDown') {
-        slideDown();
-        generate2();
-    }
-    $('#score').text(score);
-});
-
-
+var board;
+var score = 0;
+var rows = 4;
+var columns = 4;
+var checking = false;
 $(function () {
     startGame();
 });
 
 function startGame() {
-    board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+    board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
 
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
@@ -41,9 +23,65 @@ function startGame() {
     generate2();
 }
 
+function updateTile(tile, num) {
+    tile.text('');
+    tile.removeAttr('class');
+    tile.addClass('tile');
+    if (num > 0) {
+        tile.text(num.toString());
+        if (num <= 2048) {
+            tile.addClass('n' + num.toString());
+        } else tile.addClass('n2048');
+    }
+}
+
+function hasEmptyTile() {
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            if (board[r][c] === 0) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+function checkEnd() {
+    checking = true;
+    var boardCopy = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
+    let equal = true;
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns; c++) {
+            boardCopy[r][c] = board[r][c];
+        }
+    }
+    slideLeft(boardCopy);
+    slideRight(boardCopy);
+    slideDown(boardCopy);
+    slideUp(boardCopy);
+
+    for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < columns && equal; c++) {
+            if (boardCopy[r][c] !== board[r][c]) {
+                equal = false;
+            }
+        }
+    }
+    checking = false;
+    if (equal) {
+        return true;
+    } else {
+        return false;
+    }
+
+}
+
 function generate2() {
-    if (!hasEmptyTile) {
-        alert('')
+    if (!hasEmptyTile()) {
+        if (checkEnd()) {
+            swal("The Board Is Filled!\nGame Over");
+            makeDiscount();
+        }
         return;
     }
     let found = false;
@@ -61,49 +99,24 @@ function generate2() {
     }
 }
 
-function hasEmptyTile() {
-    for (let r = 0; r < rows; r++) {
-        for (let c = 0; c < columns; c++) {
-            if (board[r][c] === 0) {
-                return true;
-            }
-        }
-    }
-    return false;
-}
-
-function updateTile(tile, num) {
-    tile.text('');
-    tile.removeAttr('class');
-    tile.addClass('tile');
-    if (num > 0) {
-        tile.text(num);
-        if (num <= 2048) {
-            tile.addClass('n' + num.toString());
-        } else tile.addClass('n2048');
-    }
+function filterZero(row) {
+    return row.filter(num => num !== 0); //create new array of all nums != 0
 }
 
 function slide(row) {
     //1. remove zeros
-    row = row.filter(function (num) {
-        return num !== 0;
-    });
-
+    row = filterZero(row);
     //2. slide
     for (let i = 0; i < row.length - 1; i++) {
         if (row[i] === row[i + 1]) {
             row[i] *= 2;
             row[i + 1] = 0;
-            score += row[i];
+            if (!checking)
+                score += row[i];
         }
     }
-
     //3. remove zeros again
-    row = row.filter(function (num) {
-        return num !== 0;
-    });
-
+    row = filterZero(row);
     while (row.length < columns) {
         row.push(0);
     }
@@ -111,62 +124,122 @@ function slide(row) {
 }
 
 //-------------------------- Moving -----------------------//
-function slideLeft() {
+function slideLeft(boardCopy) {
     for (let r = 0; r < rows; r++) {
-        let row = board[r];
+        let row = boardCopy[r];
         row = slide(row);
-        board[r] = row;
+        boardCopy[r] = row;
 
-        for (let c = 0; c < columns; c++) {
-            let tile = $('#' + r.toString() + '-' + c.toString());
-            let num = board[r][c];
-            updateTile(tile, num);
+        if (!checking) {
+            for (let c = 0; c < columns; c++) {
+                let tile = $('#' + r.toString() + '-' + c.toString());
+                let num = boardCopy[r][c];
+                updateTile(tile, num);
+            }
         }
+
     }
 }
 
 //same as left but reverse the row
-function slideRight() {
+function slideRight(boardCopy) {
     for (let r = 0; r < rows; r++) {
-        let row = board[r];
+        let row = boardCopy[r];
         row.reverse();
         row = slide(row);
         row.reverse();
-        board[r] = row;
+        boardCopy[r] = row;
 
-        for (let c = 0; c < columns; c++) {
-            let tile = $('#' + r.toString() + '-' + c.toString());
-            let num = board[r][c];
-            updateTile(tile, num);
+        if (!checking) {
+            for (let c = 0; c < columns; c++) {
+                let tile = $('#' + r.toString() + '-' + c.toString());
+                let num = boardCopy[r][c];
+                updateTile(tile, num);
+            }
         }
     }
 }
 
-function slideUp() {
+function slideUp(boardCopy) {
     for (let c = 0; c < columns; c++) {
-        let row = [board[0][c], board[1][c], board[2][c], board[3][c]];
+        let row = [boardCopy[0][c], boardCopy[1][c], boardCopy[2][c], boardCopy[3][c]];
         row = slide(row);
+        boardCopy[0][c] = row[0];
+        boardCopy[1][c] = row[1];
+        boardCopy[2][c] = row[2];
+        boardCopy[3][c] = row[3];
 
-        for (let r = 0; r < rows; r++) {
-            board[r][c] = row[r];
-            let tile = $('#' + r.toString() + '-' + c.toString());
-            let num = board[r][c];
-            updateTile(tile, num);
+        if (!checking) {
+            for (let r = 0; r < rows; r++) {
+                let tile = $('#' + r.toString() + '-' + c.toString());
+                let num = boardCopy[r][c];
+                updateTile(tile, num);
+            }
         }
     }
 }
 
-function slideDown() {
+function slideDown(boardCopy) {
     for (let c = 0; c < columns; c++) {
-        let row = [board[0][c], board[1][c], board[2][c], board[3][c]];
+        let row = [boardCopy[0][c], boardCopy[1][c], boardCopy[2][c], boardCopy[3][c]];
         row.reverse();
         row = slide(row);
         row.reverse();
-        for (let r = 0; r < rows; r++) {
-            board[r][c] = row[r];
-            let tile = $('#' + r.toString() + '-' + c.toString());
-            let num = board[r][c];
-            updateTile(tile, num);
+        boardCopy[0][c] = row[0];
+        boardCopy[1][c] = row[1];
+        boardCopy[2][c] = row[2];
+        boardCopy[3][c] = row[3];
+        if (!checking) {
+            for (let r = 0; r < rows; r++) {
+                let tile = $('#' + r.toString() + '-' + c.toString());
+                let num = boardCopy[r][c];
+                updateTile(tile, num);
+            }
+        }
+    }
+}
+
+document.addEventListener('keyup', function (e) {
+    if (e.code === 'ArrowLeft') {
+        slideLeft(board);
+        generate2();
+    } else if (e.code === 'ArrowRight') {
+        slideRight(board);
+        generate2();
+    } else if (e.code === 'ArrowUp') {
+        slideUp(board);
+        generate2();
+    } else if (e.code === 'ArrowDown') {
+        slideDown(board);
+        generate2();
+    }
+    $('#score').text(score);
+});
+
+function makeDiscount() {
+
+    if (!getCookie('game2048')) {
+        let date = new Date();
+        date.setMonth(date.getMonth() + 1);
+        setCookie('game2048', 1, date);
+        if (!getCookie('discount')) {
+            setCookie('discount', 0, date);
+        }
+        calcDiscount();
+    }
+}
+
+function calcDiscount() {
+    var currentDiscount = parseInt(getCookie('discount'));
+    if (currentDiscount < 10) {
+        if (score > 10000) {
+            setCookie('discount', (currentDiscount + 5));
+        } else if (score > 5000) {
+            setCookie('discount', (currentDiscount + 3));
+        } else if (score > 2048) {
+            setCookie('discount', (currentDiscount + 2));
+        } else {
+            setCookie('discount', (currentDiscount + 1));
         }
     }
 }
