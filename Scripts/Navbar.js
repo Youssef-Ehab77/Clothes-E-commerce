@@ -10,12 +10,9 @@ $(function(){
     setTimeout(function(){
         var pageName = location.pathname.substring(6,(location.pathname.length-5))
         if(pageName){
-            console.log(pageName , $('#' + pageName).eq(0).siblings())
             $('#' + pageName).eq(0).addClass('active')
             $('#' + pageName).eq(0).siblings().removeClass('active')
-
         }
-        console.log()
     })
     
 })
