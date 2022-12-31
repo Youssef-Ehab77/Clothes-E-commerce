@@ -27,6 +27,7 @@
   /* text-align: center; */
 }
 .about-container-details .heading{
+
   padding-bottom: 15px;
   color: var(--light);
   text-align: center;
@@ -37,10 +38,11 @@
   align-items: center;
   flex-direction: column;
 
-}
+
 .about-container-details h1{
   margin-top: 0;
   text-align: center;
+
   margin-bottom: 40px;
   color: white;
 }
