@@ -307,6 +307,7 @@ body{
     color: #FFFFFF;
     background-color: #EF8354;
     transition: all ease 0.3s;
+    cursor: pointer;
 }
 .overlay{
     visibility: hidden;
