@@ -6,8 +6,6 @@ body {
     #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);
     /*overflow: hidden;*/
     height: 100vh;
-
-
 }
 
 .games-container{
@@ -26,7 +24,7 @@ hr {
     height: 450px;
     background-color: #cdcece;
     border-radius: 15px;
-    border: 7px solid #2D3142;
+    border: 8px solid #2D3142;
     margin: 0 auto;
     padding: 0;
     display: flex;
@@ -37,7 +35,7 @@ hr {
     box-sizing: border-box;
     height: 25%;
     width: 25%;
-    border: solid #2D3142 5px;
+    border: solid #2D3142 4px;
     font-size: 50px;
     font-weight: bold;
     display: flex;

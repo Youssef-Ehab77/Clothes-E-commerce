@@ -6,7 +6,7 @@ body{
     height: 100vh;
     background-image: linear-gradient(to right bottom, #2d3142, #414a58, #59656f, #748085, #939b9d, #94a7a8,
     #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);
-
+    font-family: Roboto,sans-serif;
 }
 .games-container{
     display: flex;
