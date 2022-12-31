@@ -4,7 +4,9 @@ body {
     margin: 0;
     padding: 0;
     max-height: 100vh;
-    background-image: linear-gradient(to right bottom, #2d3142, #414a58, #59656f, #748085, #939b9d, #94a7a8, #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);}
+    background-image: linear-gradient(to right bottom, #2d3142, #414a58, #59656f, #748085, #939b9d, #94a7a8,
+    #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);
+}
 
 hr {
     width: 600px;
@@ -18,7 +20,7 @@ h1, h2 {
     width: 500px;
     height: 500px;
     background-color: #cdcece;
-    /*border-radius: 15px;*/
+    border-radius: 15px;
     border: 7px solid #2D3142;
     margin: 0 auto;
     padding: 0;
