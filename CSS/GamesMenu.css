@@ -8,7 +8,7 @@ body{
     #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);
 
 }
-.main{
+.games-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,17 +48,17 @@ h1{
     cursor: pointer;
 
 }
-img{
+.game1-img, .game2-img{
     width: 300px;
     height: 300px;
     object-fit: contain;
     border-radius: 30%;
-    
+
 }
 span{
     text-align: center;
     text-transform: uppercase;
-    font-family: calibri;
+    font-family: Roboto,sans-serif;
     font-weight: 700;
     font-size: 20px;
 }

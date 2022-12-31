@@ -185,7 +185,7 @@ $(".again").on("click", function () {
     window.location.reload();
 })
 $(".return").on("click", function () {
-    window.location.assign("../HTML/GamesMenu.html");
+    window.location.assign("../HTML/index.html");
 })
 
 // game

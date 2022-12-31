@@ -7,6 +7,11 @@ $(function () {
     startGame();
 });
 
+setTimeout(function () {
+    $("#header").load('../HTML/Components/Navbar.html');
+    // $('#footer').load('../HTML/Components/Footer.html');
+}, 200);
+
 function startGame() {
     board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]];
 

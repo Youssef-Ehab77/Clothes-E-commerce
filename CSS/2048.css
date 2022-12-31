@@ -1,21 +1,23 @@
 body {
-    text-align: center;
     font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right bottom, #2d3142, #414a58, #59656f, #748085, #939b9d, #94a7a8,
     #97b3ae, #9fbfaf, #9eba90, #b1af6c, #cf9d53, #ef8354);
     /*overflow: hidden;*/
-    height: 97vh;
+    height: 100vh;
 
 
 }
 
+.games-container{
+    text-align: center;
+}
 hr {
     width: 600px;
 }
 
-h1, h2 {
+.game-name, .rule {
     color: #FFFFFF;
 }
 
@@ -43,7 +45,7 @@ h1, h2 {
     align-items: center;
 }
 
-h3 {
+.score-text {
     color: #ffffff;
     font-weight: bold;
     font-size: 40px;
