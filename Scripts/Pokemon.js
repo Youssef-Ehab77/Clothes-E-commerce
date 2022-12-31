@@ -65,13 +65,13 @@ function update() {
             date.setMonth(date.getMonth() + 1);
             if (getCookie('pokemon') === '1') {
                 $(".you-won").css("display", 'block')
-                $(".result").html("No discount, but you still can have fun!");
+                $(".result").html("No more discounts, but you still can have fun!");
             } else if (getCookie('discount')) {
                 $(".you-won").css("display", 'block');
                 if (parseInt(getCookie('discount')) < 10) {
-                    $(".result").html("You won 2% discount");
-                    let discountValue = parseInt(getCookie('discount'));
-                    setCookie('discount', (discountValue + 2), date);
+                    let currentDiscount = parseInt(getCookie('discount'));
+                    $(".result").html("You won 2% discount\nCurrent total discount is " + (currentDiscount + 2) + "%");
+                    setCookie('discount', (currentDiscount + 2), date);
                 }
             } else {
                 $(".you-won").css("display", 'block');
