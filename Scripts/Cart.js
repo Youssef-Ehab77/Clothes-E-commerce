@@ -43,18 +43,24 @@ $(function() {
         }
 
 
-    
-
     setTimeout(function (){
         $(".continue-shopping").click(function () {
             window.location = '../HTML/Index.html';
         })
         $("#footer").load('../HTML/Components/Footer.html');
         $('#header').load('../HTML/Components/Navbar.html');
-        $('.total-price').text('Total Price: £' + check_price);
-        $('.number-items').text(number_of_items + ' items');
+        
+        if (getCookie('discount'))
+        {
+            var discount = getCookie('discount');
+            $('.total-price').html('Total Price: £' + check_price + "<br>" + '<span class="greenish-text">- ' + discount + "% = £" + (parseInt(check_price) - (parseInt(discount) * (parseInt(check_price) / 100))) + '</span>');
+        }
+        else
+            $('.total-price').text('Total Price: £' + check_price);
+        
+            $('.number-items').text(number_of_items + ' items');
 
-        $(".increment").click(function() {
+        $(".increment").click(function() { ////////////////INCREMENT////////////////// 
             
         var countElement = $(this).closest('.product').find('.count');
 
@@ -65,9 +71,13 @@ $(function() {
         //update cookie's value
         var changedCookieName = $(this).closest('.product').find('.product-name').text();
         for (item of dataObj)
-        {
+        {  
             if (item.name == changedCookieName)
+            {
+                console.log(count);
                 setCookie(item.id, count)
+
+            }
         }
 
         var global_count = parseInt($('.number-items').text()) + 1
@@ -84,8 +94,8 @@ $(function() {
 
         
         //update print
-        $('.total-price').text('Total Price: £' + check_price);
-     
+        $('.total-price').html('Total Price: £' + check_price + "<br>" + '<span class="greenish-text">- ' + discount + "% = £" + (parseInt(check_price) - (parseInt(discount) * (parseInt(check_price) / 100))) + '</span>');
+
 
         
         $(this).closest('.product').find('.item-total').text('£' + tmpTotal) 
@@ -96,7 +106,7 @@ $(function() {
 
 
 
-        $(".decrement").click(function() {
+        $(".decrement").click(function() {          /////////////////////DECREMENT////////////////////
             var countElement = $(this).closest('.product').find('.count');
             
             if (parseInt(countElement.text()) != 0)
@@ -113,11 +123,18 @@ $(function() {
                     var tmpTotal = count * parseFloat(price.substring(1, price.length));
                     //update cookie's value
                     var changedCookieName = $(this).closest('.product').find('.product-name').text();
-                    for (item of dataObj)
+
+                    var cookieSetter = function(count)
                     {
-                        if (item.name == changedCookieName)
-                            setCookie(item.id, count)
-                    }
+                        for (item of dataObj)
+                        {
+                            if (item.name == changedCookieName)
+                            {
+                                setCookie(item.id, count)
+                                console.log(item.name);
+                            }
+                        }
+                    }(count)
                 }
                 else
                 {
@@ -135,16 +152,17 @@ $(function() {
 
 
                 //update check price
-                check_price += parseFloat(price.substring(1, price.length));
+                check_price -= parseFloat(price.substring(1, price.length));
 
              
                 //update print
-                $('.total-price').text('Total Price: $' + check_price);
+                $('.total-price').html('Total Price: £' + check_price + "<br>" + '<span class="greenish-text">- ' + discount + "% = £" + (parseInt(check_price) - (parseInt(discount) * (parseInt(check_price) / 100))) + '</span>');
 
                 $(this).closest('.product').find('.item-total').text('$' + tmpTotal) 
             }
             
             countElement.text(count);
+
 
 
             if ($(".main").find('.product').length === 0) //if cart is empty
@@ -183,7 +201,12 @@ $('.proceeder').on('click', (function(){   /// if user wants to proceed to check
     {
         $('.regex-note').remove();
         $('.checkout').show();
-        $(".pay").text('Pay £' + check_price);
+
+        if (getCookie('discount'))
+            var discount = getCookie('discount');
+
+        var final_price = (parseInt(check_price) - (parseInt(discount) * (parseInt(check_price) / 100)))
+        $(".pay").text('Pay £' + final_price);
         $('.main').css('filter', 'blur(3px)');
     }
     else if (!$('.regex-note').length)
