@@ -80,6 +80,13 @@ body {
 
   }
 
+  .inputs input{
+    border: 2px solid #4F5D75;
+    border-radius: 10px;
+  }
+
+
+
   .single-input-label {
     font-weight: bolder;
   }
@@ -138,16 +145,14 @@ body {
   }
 
 
-  .cart-title, .payment-title, .billing-address-title{
+  .cart-title, .payment-title, .billing-address-title, .shipping-details-title{
     font-weight: bolder;
     font-size: larger;
+    color: #EF8354;
+    -webkit-text-stroke: 0.2px #2D3142;
 
   }
 
-  .shipping-details-title {
-    font-weight: bolder;
-    font-size: larger;
-  }
 
   /* continue shopping  */
 
@@ -199,7 +204,7 @@ body {
 
   .checkout {
     position: fixed; 
-    border: 1px solid;
+    border: 2.5px solid #EF8354;
     background-color: #3c4052;
     margin: auto;
     top: 50%;
@@ -212,6 +217,7 @@ body {
     height: 600px;
     font-weight: bold;
     color: white;
+    border-radius: 20px;
     
 
   }
@@ -290,6 +296,10 @@ body {
     color: red;
     bottom: 2px;
 
+  }
+
+  .greenish-text {
+    color: #EF8354;
   }
 
 /* responsive styling */
