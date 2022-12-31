@@ -12,18 +12,11 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"/>
                 
         <link rel="stylesheet" href="../CSS/Style.css"/>
-        <link rel="stylesheet" href="../CSS/Loading.css"/>
-        
-        <link rel="stylesheet" href="../CSS/Header.css"/>
-
-        <link rel="stylesheet" href="../CSS/Scrollbar.css"/>
-        
-        <link id="home-page-cat" rel="stylesheet" href="../CSS/AllCategories.css"/>
-        
-        <link rel="stylesheet" href="../CSS/ViewProducts.css"/>
-
-
         <link rel="stylesheet" href="../CSS/HeaderAndFooter.css"/>
+        <link rel="stylesheet" href="../CSS/Scrollbar.css"/>
+
+        <link rel="stylesheet" href="../CSS/Contact.css"/>
+        
         
         <!-- * End Adding External Css Files -->
 
@@ -32,12 +25,78 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">    </head>
-    
-        <script src="../Scripts/jquery.js"></script>
-        <script src="../Scripts/Cookie.js"></script>
-    <head>
-    <body>
 
+    <head>
+    <body>  
+        <!-- **start adding navbar -->
+        <div id="navbar-component"></div>
+        
+        <!-- **start adding successful message -->
+        <div class="successful-msg" id="successfulMsg">
+            <h3> Sending Message Successfully ❤✌ </h3>
+        </div>
+        <div class="contact-us">
+            <!-- <h1> Contact Us </h1> -->
+            <div class="contact-us-container">
+    
+                <div class="contact-details">
+                        <h4 class="text-center">Contact Details</h4>
+        
+                        <div class="mb-2">
+                            <i class="fa-solid fa-location-dot"></i>  
+                            <h6> Address </h6>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa-solid fa-phone"></i>
+                            <h6> Phone </h6>
+
+                            <p> (+20) 12547554 </p>
+                            <p> (+20) 12547689 </p>
+
+                        </div>
+                        <div class="mb-2">
+                            
+                            <i class="fa-regular fa-envelope"></i>
+                            <h6> Email </h6>
+                            <p> BoHo@email.com </p>
+                        </div>
+                </div>
+
+                <div class="cotact-form">
+                    <h2> Or Write Us </h2>
+                    <div class="error"> 
+                        <h4> 
+                            Please Enter Your data
+                        </h4>
+                    </div>
+                    <div class="container">
+                        <div class="form-group">
+                            <input type = "text" placeholder="Name*" id="name"/>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email*" id="email"/>
+                            
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Enter Your Message..." rows="5" id="message"></textarea>
+                        </div>
+                       
+                        <button class="btnSendMsg" id="btnSendMsg"> Send Message </button>
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+
+        <!--* Start footer Component -->
+        <div id="footer-component"></div>
+        
+        
+        <script src="./../Scripts/jquery.js"></script>
+        <script src="./../Scripts/Cookie.js"></script>
+        <!-- <script src="../../Scripts/Navbar.js"></script> -->
+        <script src="../Scripts/ContactUs.js"> </script>
     </body>
     
 </html>
