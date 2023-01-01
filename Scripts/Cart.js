@@ -82,7 +82,7 @@ $(function() {
 
 
 
-        $(".increment").click(function() { ////////////////INCREMENT////////////////// 
+        $(".increment").click(function incrementer() { ////////////////INCREMENT////////////////// 
             
         var countElement = $(this).closest('.product').find('.count');
 
@@ -95,11 +95,7 @@ $(function() {
         for (item of dataObj)
         {  
             if (item.name == changedCookieName)
-            {
-                console.log(count);
                 setCookie(item.id, count)
-
-            }
         }
 
         var global_count = parseInt($('.number-items').text()) + 1
@@ -137,6 +133,13 @@ $(function() {
         $(".decrement").click(function() {          /////////////////////DECREMENT////////////////////
             var countElement = $(this).closest('.product').find('.count');
             
+            if (countElement.text() == 1)
+            {
+                var wantToRemoveItem = confirm("Are you sure you want to remove this item from your cart?");
+                if (!wantToRemoveItem)
+                    incrementer();
+            }
+
             if (parseInt(countElement.text()) != 0)
             {
                 var count = parseInt(countElement.text()) -1;
@@ -160,10 +163,8 @@ $(function() {
                         for (item of dataObj)
                         {
                             if (item.name == changedCookieName)
-                            {
                                 setCookie(item.id, count)
-                                console.log(item.name);
-                            }
+
                         }
                     }(count)
                 }
@@ -179,7 +180,6 @@ $(function() {
                             deleteCookie(item.id);
                     }
                 }
-
 
 
                 //update check price
