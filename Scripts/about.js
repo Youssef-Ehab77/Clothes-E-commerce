@@ -1,6 +1,6 @@
 $(function () {
     setTimeout(function () {
-        $('#footer').load('../HTML/Components/Footer.html');
+        $('#footer').load('Components/Footer.html');
     }, 250)
 
 });
