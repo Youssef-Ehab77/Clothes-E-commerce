@@ -4,16 +4,16 @@ function getCategoryPath(category){
     var path 
     //* women category
     if(category == 'women') {
-        path = "../../Data/Women.json";
+        path = "../Data/Women.json";
     }
     //* men category
     else if(category == 'men'){
-        path = "../../Data/Men.json";
+        path = "../Data/Men.json";
         
     } 
     //* Sale
     else{
-        path = "../../Data/Sale.json";
+        path = "../Data/Sale.json";
     }
     return path
 
