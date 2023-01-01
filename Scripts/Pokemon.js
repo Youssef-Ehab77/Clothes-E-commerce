@@ -190,7 +190,7 @@ $(".again").on("click", function () {
     window.location.reload();
 })
 $(".return").on("click", function () {
-    window.location.assign("../HTML/index.html");
+    window.location.assign("../HTML/Index.html");
 })
 
 // game
