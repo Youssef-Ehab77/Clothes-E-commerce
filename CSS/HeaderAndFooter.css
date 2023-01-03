@@ -22,6 +22,9 @@ a {
     text-decoration: none;
 }
 
+a:visited{
+    color: inherit;
+}
 .container {
     /* I made the content in the middle
     while the back ground on whole screen */
