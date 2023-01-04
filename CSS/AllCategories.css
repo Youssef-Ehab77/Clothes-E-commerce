@@ -70,7 +70,7 @@
     cursor: pointer;
     z-index: 1000;
 }
-.image-details a{color: white; letter-spacing: 1px; font-weight: 400    ;}
+.image-details a{color: white!important; letter-spacing: 1px; font-weight: 400    ;}
 
 
 
